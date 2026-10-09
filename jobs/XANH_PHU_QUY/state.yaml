@@ -1,0 +1,31 @@
+core_message: "Xanh Phú Quý: Khát vọng thịnh vượng vươn tầm, vững vàng bảo vệ trọn đời và đưa gia sản gia tộc thăng hoa qua nhiều thế hệ."
+exact_copy:
+  eyebrow: "MANULIFE • BẢO HIỂM LIÊN KẾT ĐƠN VỊ"
+  headline_trio:
+    tier_1: "Khát vọng"
+    tier_2: "thịnh vượng"
+    tier_3: "XANH PHÚ QUÝ"
+  subheadline: "Vững Vàng Bảo Vệ • Gia Sản Thăng Hoa"
+  badges:
+    - "Đóng phí linh hoạt từ 5 năm"
+    - "Bảo vệ toàn diện đến 99 tuổi"
+    - "Tích lũy & Chuyển giao di sản"
+  signature: "Tiến"
+  contact:
+    name: "Dương Quang Tiến"
+    title: "Trưởng nhóm kinh doanh Manulife"
+    phone: "0935 074 268"
+signature_mode: contact
+style: "STYLE_018_HERITAGE_S_CURVE_JOURNEY"
+selected_concept: "CONCEPT_04_IMPERIAL_PHOENIX"
+dna_reference: "DNA_018_HERITAGE_S_CURVE_JOURNEY"
+pairing_formula: "THE HERITAGE LUXURY TRIO"
+aspect_ratio: "3:4"
+current_version: "3.0"
+unresolved_facts: []
+date: "2026-10-02"
+product_source: "https://www.manulife.com.vn/vi/san-pham-bao-hiem/bao-hiem-lien-ket-dau-tu/bao-hiem-lien-ket-don-vi/xanh-phu-quy.html"
+workflow_rules:
+  output_mode: "MASTER_PROMPT_ONLY"
+  platform_adapters_enabled: false
+  step: "MASTER_PROMPT_LOCKED"

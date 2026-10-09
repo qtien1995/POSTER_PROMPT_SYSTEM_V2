@@ -1,0 +1,74 @@
+project: POSTER_STUDIO_AND_PROMPT_SYSTEM
+version: '2.5'
+
+# Execution modes:
+# hybrid       = Directly generate high-end image visual AND output production Master Prompt (RECOMMENDED)
+# direct_image = Generate image visual directly using AI image engine
+# prompt_only  = Output universal 18-block Master Production Prompt only
+execution_mode: hybrid
+
+conversation_language: vi
+master_prompt_language: en
+artwork_copy_language: preserve_user_language
+
+workflow:
+  default_output: hybrid_image_and_master_prompt
+  default_concept_count: 1
+  approval_gate: false
+  show_internal_reasoning: false
+  ask_only_if_essential: true
+
+# Direct image generation settings
+image_generation:
+  engine: builtin_generate_image
+  default_aspect_ratio: '4:5'
+  supported_aspect_ratios: ['4:5', '1:1', '9:16', '16:9', '3:4', '2:3']
+  quality_standard: chatgpt_images_2_5_editorial
+  integrated_copy_rendering: true
+  auto_display_artifact: true
+
+# 99% DNA Cloning & Transfer Engine
+dna_cloning:
+  default_mode: dna_transfer_99
+  target_fidelity: 0.99
+  deep_extraction_layers:
+    - layout_and_geometric_grid
+    - lighting_physics_and_falloff
+    - color_palette_and_chroma
+    - materiality_and_surface_shaders
+    - camera_optics_and_focal_depth
+    - integrated_typography_and_graphics
+
+poster:
+  default_aspect_ratio: '4:5'
+  default_platform: social_media
+  one_core_message: true
+  one_primary_focal_point: true
+  mobile_readability: true
+  compress_overlong_copy: true
+
+text:
+  on_image_copy_required: true
+  exact_text_whitelist: true
+  prohibit_extra_rendered_text: true
+  prohibit_instruction_leakage: true
+  integrated_graphic_design: true
+
+branding:
+  brand_logo_default: false
+  signature_required: true
+  signature_mode_default: contact
+
+reference:
+  default_mode: inspiration
+  high_fidelity_recreation_mode: dna_transfer_99
+
+feedback:
+  default_strategy: local_repair
+  rebuild_when_concept_fails: true
+  one_revised_master_prompt: true
+
+style_pivot:
+  proposal_count: 3
+  recommend_one: true
+  production_prompt_after_selection: true

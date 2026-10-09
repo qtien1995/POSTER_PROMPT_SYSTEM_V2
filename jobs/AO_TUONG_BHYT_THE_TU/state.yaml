@@ -1,0 +1,23 @@
+job_name: "AO_TUONG_BHYT_THE_TU"
+content_id: "CNT-20261004-AO-TUONG-BHYT-THE-TU"
+mode: "HYBRID"
+status: "COMPLETED"
+selected_style: "STYLE_003_CINEMATIC_METAPHOR + STYLE_002_ISOMETRIC_BLUEPRINT"
+aspect_ratio: "1:1"
+number_of_frames: 4
+advisor:
+  name: "Dương Quang Tiến"
+  title: "Trưởng nhóm kinh doanh"
+  organization: "Manulife"
+  phone: "0935 074 268"
+  signature: "Tiến"
+created_at: "2026-10-04T23:40:00+07:00"
+completed_at: "2026-10-04T23:49:00+07:00"
+deliverables:
+  - "brief.md"
+  - "CONTENT_FACEBOOK.md"
+  - "MASTER_PROMPT.md"
+  - "frame_01_hook_bhyt_80.jpg"
+  - "frame_02_diem_mu_danh_muc.jpg"
+  - "frame_03_bai_toan_500_trieu.jpg"
+  - "frame_04_kien_truc_mong_mai.jpg"

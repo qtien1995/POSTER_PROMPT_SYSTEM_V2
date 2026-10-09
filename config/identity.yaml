@@ -1,0 +1,15 @@
+# Source of truth for the poster signature / personal identity block.
+# Verified from advisor source document: 13_ADVISOR_SIGNATURE_AND_CONTACT_SYSTEM_DUONG_QUANG_TIEN.md
+
+handwritten_signature: 'Tiến'
+full_name: 'Dương Quang Tiến'
+title: 'Trưởng nhóm kinh doanh'
+organization: 'Manulife'
+phone: '0935 074 268'
+
+# Modes:
+# minimal        = handwritten signature only ("Tiến")
+# personal_brand = signature + full name + title + organization
+# contact        = personal_brand + phone ("0935 074 268")
+# integrated     = secondary identity layer seamlessly blended into artwork negative space
+default_mode: contact

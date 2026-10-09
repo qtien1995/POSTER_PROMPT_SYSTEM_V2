@@ -1,0 +1,23 @@
+job_name: "AO_TUONG_BHYT_THE_TU_STYLE_COMIC"
+content_id: "CNT-20261004-AO-TUONG-BHYT-THE-TU-COMIC"
+mode: "HYBRID"
+status: "COMPLETED"
+selected_style: "STYLE_007_COMIC_TIMELINE"
+aspect_ratio: "1:1"
+number_of_frames: 4
+advisor:
+  name: "Dương Quang Tiến"
+  title: "Trưởng nhóm kinh doanh"
+  organization: "Manulife"
+  phone: "0935 074 268"
+  signature: "Tiến"
+created_at: "2026-10-04T23:59:00+07:00"
+completed_at: "2026-10-05T17:19:00+07:00"
+deliverables:
+  - "brief.md"
+  - "CONTENT_FACEBOOK.md"
+  - "MASTER_PROMPT.md"
+  - "frame_01_hook_comic.jpg"
+  - "frame_02_blindspot_comic.jpg"
+  - "frame_03_math_comic.jpg"
+  - "frame_04_solution_comic.jpg"
