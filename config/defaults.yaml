@@ -1,5 +1,5 @@
 project: POSTER_STUDIO_AND_PROMPT_SYSTEM
-version: '2.5'
+version: '3.0'
 
 # Execution modes:
 # hybrid       = Directly generate high-end image visual AND output production Master Prompt (RECOMMENDED)
@@ -22,7 +22,8 @@ workflow:
 image_generation:
   engine: builtin_generate_image
   default_aspect_ratio: '4:5'
-  supported_aspect_ratios: ['4:5', '1:1', '9:16', '16:9', '3:4', '2:3']
+  # Note: When requesting 4:5, auto-map to '3:4' for builtin generate_image API call, while keeping 4:5 for Midjourney/Flux.
+  supported_aspect_ratios: ['4:5', '1:1', '9:16', '16:9', '3:4', '2:3', '3:2', '4:3']
   quality_standard: chatgpt_images_2_5_editorial
   integrated_copy_rendering: true
   auto_display_artifact: true

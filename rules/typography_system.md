@@ -1,4 +1,4 @@
-# Intelligent Typography Engine & Multi-Font Pairing Matrix V2.5
+# Intelligent Typography Engine & Multi-Font Pairing Matrix V3.0
 
 Nguồn thẩm mỹ: Benchmark **OpenAI ChatGPT Images 2.5, Tạp chí Haute-Couture / Editorial quốc tế & Poster Di Sản Văn Hóa Cao Cấp**.
 
@@ -6,141 +6,112 @@ Hệ thống Typography của dự án **tuyệt đối không sử dụng một
 
 ---
 
-## 1. Năm Công Thức Phối Font Thông Minh (5 Multi-Font Pairing Formulas)
+## 1. Mười Một Công Thức Phối Font Thông Minh (11 Multi-Font Pairing Formulas)
 
-Tùy theo phong cách và chủ đề, hệ thống sẽ **tự động lựa chọn công thức tương ứng**:
+Hệ thống tự động kích hoạt công thức tương ứng theo phong cách và thông điệp:
 
-### Công thức 1: THE HERITAGE LUXURY TRIO (Bộ Ba Di Sản Thượng Lưu - Chuẩn Ảnh Mẫu)
-- **Áp dụng cho:** `18_HERITAGE_S_CURVE_JOURNEY`, `06_PREMIUM_WEALTH`, `03_VISUAL_METAPHOR`, Hoạch định di sản, Gia tộc trường tồn.
-- **Cấu trúc 3 tầng tương phản đỉnh cao:**
-  1. **Line 1 (Dẫn nhập):** Phông **Modern Classic Serif** (Didot / Bodoni / Playfair Display / Cormorant Garamond), dáng đứng thanh lịch, màu ngọc lục bảo hoặc đen tuyền.
-  2. **Line 2 (Cảm xúc / Nối nhịp):** Phông **Calligraphic Script / Flowing Brush Cursive** (chữ viết tay thư pháp mềm mại, bay bổng, nghiêng nhẹ như Parisian Script / Great Vibes / Thư pháp hiện đại), kết nối nhịp nhàng giữa dòng trên và dòng dưới.
-  3. **Line 3 (Hero Punchline - Từ khóa Trọng tâm):** Phông **3D Luxury Beveled Gold Embossed Display** (Trajan Pro / Cinzel Decorative), viết HOA toàn bộ, kích thước phóng đại gấp **2.5x – 3x**, đổ khối kim loại 3D nổi mạ vàng champagne sáng bóng với vệt sáng lấp lánh (specular gleams) và đổ bóng thực tế.
-
----
+### Công thức 1: THE HERITAGE LUXURY TRIO (Bộ Ba Di Sản Thượng Lưu)
+- **Áp dụng cho:** `STYLE_018_HERITAGE_S_CURVE_JOURNEY`, `06_PREMIUM_WEALTH`, Hoạch định di sản, Gia tộc trường tồn.
+- **Cấu trúc 3 tầng:**
+  1. *Line 1 (Dẫn nhập):* Modern Classic Serif (Didot / Bodoni / Playfair Display) thanh lịch, đứng thẳng.
+  2. *Line 2 (Nối nhịp cảm xúc):* Calligraphic Brush Script (chữ viết tay thư pháp mềm mại, bay bổng, nghiêng nhẹ 15°).
+  3. *Line 3 (Hero Punchline):* 3D Luxury Beveled Gold Embossed Display (Trajan Pro / Cinzel Decorative), viết HOA, phóng đại 2.5x–3x, đổ khối vàng 24K specular gleams.
 
 ### Công thức 2: THE MODERN POWER DUO (Cặp Đôi Quyền Lực Hiện Đại)
-- **Áp dụng cho:** `01_MANULIFE_CLEAN`, `08_SOCIAL_MEDIA_HOOK`, `14_FINANCIAL_ARCHITECTURE`, `09_SCENARIO_COMPARISON`.
+- **Áp dụng cho:** `01_MANULIFE_CLEAN`, `STYLE_023_MODERN_FLAT_VECTOR_EDITORIAL`, So sánh chi phí cơ hội, Thông điệp dứt khoát.
 - **Cấu trúc:**
-  - **Từ khóa chính:** Phông **Ultra Bold Geometric Sans-Serif** (Neue Haas Grotesk / Futura Bold / Gilroy Heavy), nét cực dày, tracking -0.02em, đĩnh đạc và uy lực.
-  - **Từ bổ trợ:** Phông **Humanist Serif Italic** hoặc **Light Sans** mảnh mai đối lập, tạo nhịp thở thị giác.
+  - *Từ khóa chính:* Ultra Bold Geometric Sans-Serif (Neue Haas Grotesk / Futura Bold / Gilroy Heavy), nét cực dày, tracking -0.02em, đĩnh đạc và uy lực.
+  - *Từ bổ trợ:* Humanist Serif Italic hoặc Light Sans mảnh mai đối lập, tạo nhịp thở thị giác.
 
----
-
-### Công thức 3: THE HIGH-END EDITORIAL CONTRAST (Tạp Chí Thượng Lưu Báo Chí)
-- **Áp dụng cho:** `05_EDITORIAL_MAGAZINE`, `16_CONCEPTUAL_EDITORIAL`, `15_DOCUMENTARY_EDITORIAL`.
+### Công thức 3: THE VOGUE EDITORIAL COVER (Bìa Tạp Chí Sang Trọng)
+- **Áp dụng cho:** Poster phong cách tạp chí cố vấn, báo cáo thị trường, góc nhìn chuyên gia cao cấp.
 - **Cấu trúc:**
-  - **Headline chính:** Phông **High-Contrast Fashion Serif** (Editorial New / Ogg / Canela), chân chữ siêu mảnh, nét dọc siêu đậm.
-  - **Dòng dẫn & Callout:** Phông **Clean Monospace Technical Sub-label** hoặc **Micro Sans Badge** (GT America Mono / Helvetica Neue 8pt), đặt trong khung pill viền mảnh 0.5pt.
-
----
+  - *Dòng 1:* Editorial New Serif (cỡ chữ lớn, nét dọc siêu đậm, nét ngang tơ mảnh).
+  - *Dòng 2 (Nối nhịp):* Parisian Cursive Script (chữ viết tay nghiêng lả lướt vắt ngang chân dòng 1).
+  - *Dòng 3:* Futura Bold dập phẳng hoặc Canela Display.
 
 ### Công thức 4: THE SWISS DATA HIERARCHY (Đồ Họa Dữ Liệu Chuẩn Xác)
-- **Áp dụng cho:** `02_INFORMATION_INFOGRAPHIC`, `07_DATA_VISUALIZATION`, `11_ANATOMICAL_BODY_MAP`, `13_CLINICAL_INFORMATION_DESIGN`.
+- **Áp dụng cho:** Báo cáo tài chính, bảo lãnh viện phí, phân tích 134 bệnh lý, sa bàn số liệu.
 - **Cấu trúc:**
-  - **Hero Number / Metric:** Con số 3D điêu khắc hoặc Sans-Serif khổng lồ chiếm 25% chiều cao vùng chữ.
-  - **Sub-label & Đơn vị:** Font Sans kỹ thuật số cô đọng (Condensed Sans), in hoa, dãn cách rộng (tracking +0.08em).
-  - **Badges:** Chip thông tin nền kính mờ bo góc tròn (frosted pill tags) với chữ trắng tương phản sắc nét.
-
----
+  - *Hero Number / Metric:* Con số 3D điêu khắc hoặc Sans-Serif khổng lồ chiếm 25% chiều cao vùng chữ.
+  - *Sub-label & Đơn vị:* Font Condensed Sans kỹ thuật số cô đọng, in hoa, tracking +0.08em.
+  - *Badges:* Chip thông tin nền kính mờ bo góc tròn (frosted pill tags) với chữ trắng sắc nét.
 
 ### Công thức 5: THE EMPATHETIC COMIC NARRATIVE (Truyện Tranh Tự Sự Đời Thực)
-- **Áp dụng cho:** `17_EDITORIAL_COMIC_TIMELINE`, `10_EDUCATIONAL_ILLUSTRATION`.
+- **Áp dụng cho:** `STYLE_017_EDITORIAL_COMIC_TIMELINE`, Giáo dục tài chính, Hóa giải trì hoãn.
 - **Cấu trúc:**
-  - **Headline:** Display Sans bo góc thân thiện, nét mực đậm đà.
-  - **Bong bóng suy nghĩ (Thought Bubbles):** Phông chữ viết tay truyện tranh sạch sẽ, biểu cảm (Hand-lettered Comic Sans sạch kiểu *The New Yorker*).
-  - **Thẻ mốc giai đoạn:** Nhãn hộp chữ nhật bo góc viền xanh rừng Manulife với chữ in hoa màu trắng sắc sảo.
+  - *Headline:* Display Sans bo góc thân thiện, nét mực đậm đà.
+  - *Bong bóng suy nghĩ (Thought Bubbles):* Phông chữ viết tay truyện tranh sạch sẽ, biểu cảm kiểu *The New Yorker*.
+  - *Thẻ mốc giai đoạn:* Nhãn hộp chữ nhật bo góc viền xanh rừng Manulife với chữ in hoa màu trắng sắc sảo.
 
----
-
-### Công thức 6: THE HEROIC DRAGON 3D MONUMENT (Đại Hào Quang Rồng Vàng & Trống Đồng 3D)
-- **Áp dụng cho:** `20_CYBER_MYTHIC_GOLDEN_DRAGON_DONG_SON`, MV âm nhạc di sản, Đại sự kiện quốc gia, Chiến dịch Tự hào Việt Nam.
+### Công thức 6: THE QUIET LUXURY MINIMALIST (Tối Giản Thầm Lặng)
+- **Áp dụng cho:** Khách hàng Private Wealth, phong cách tinh giản tối cao, thanh lịch không phô trương.
 - **Cấu trúc:**
-  - **Hero Headline:** 3D Beveled Chrome-Gold Display có rãnh vân kim loại phản quang (phóng to 3x, in HOA toàn bộ, neo vững trên chân trời đồng lúa).
-  - **Credit line:** Modern Geometric Sans-serif in hoa thanh mảnh, tracking rộng, màu vàng ngà kem, kết nối bằng chữ "x" duyên dáng.
-  - **Metadata / Broadcast time:** Biểu tượng mặt trời Đông Sơn vi mô làm phân cách, số giờ định dạng sắc sảo.
+  - *Tiêu đề duy nhất:* Canela Display hoặc Didot Regular (cỡ vừa, thanh mảnh tinh khiết).
+  - *Không gian âm (Negative Space):* Chiếm tới 65% diện tích poster.
+  - *Nhận diện:* Brittany Signature siêu mảnh ở góc dưới.
 
----
-
-### Công thức 7: THE IMPERIAL GOLD & EMERALD PEDESTAL (Bảo Vật Hoàng Kim Trên Bệ Sương Bích Ngọc)
-- **Áp dụng cho:** `21_IMPERIAL_GOLD_DRUM_EMERALD_PEDESTAL`, Quà tặng phong thủy mạ vàng 24K, Bảo vật gia tộc, Tích sản hoàng gia.
+### Công thức 7: THE POWER PROCLAMATION (Tuyên Ngôn Cảnh Tỉnh)
+- **Áp dụng cho:** Poster cảnh báo bẫy tài chính, lạm phát, chi phí chìm y tế.
 - **Cấu trúc:**
-  - **Headline:** Imperial Chiseled Heritage Serif (Bodoni/Didot) 2 dòng đối xứng cân bằng tuyệt đối, dấu tiếng Việt gọt vát tinh xảo, màu kem ngà ánh xanh ngọc.
-  - **Decorative Accents:** Cặp chim Lạc Đông Sơn nét vẽ line-art mạ vàng sải cánh đối xứng ngay dưới chân chữ.
-  - **Thông số kỹ thuật:** Swiss Sans-serif (Inter/Helvetica) phân cấp nhãn in đậm và thông số chữ thường thanh nhã căn giữa đáy ảnh.
+  - *Headline:* Roslindale Display hoặc Cinzel Bold màu đen tuyền hoặc xanh sẫm.
+  - *Điểm nhấn màu:* 1 từ duy nhất đổ màu vàng Champagne hoặc đỏ cam đất nung (Terracotta).
+  - *Dòng phụ:* Helvetica Now Light canh lề trái thẳng tắp.
 
----
-
-### Công thức 8: THE OBSIDIAN PORCELAIN POETRY (Thơ Ca Gốm Sứ Trên Hư Không Đen Tuyền)
-- **Áp dụng cho:** `22_CHU_DAU_ROYAL_CERAMICS_SURREAL_DIORAMA`, Gốm sứ mỹ nghệ, Triển lãm bảo tàng nghệ thuật, Di sản siêu thực.
+### Công thức 8: THE ASIAN HERITAGE BLEND (Hòa Sắc Di Sản Á Đông & Hiện Đại)
+- **Áp dụng cho:** `STYLE_009_VIETNAMESE_HERITAGE_ROYAL_ART`, Văn hóa truyền thống, Tết & Sự kiện tri ân.
 - **Cấu trúc:**
-  - **Hero Brand:** Haute-Couture Ultra-Light Hairline Serif (SangBleu/Canela) siêu mảnh, dãn cách chữ cực rộng (+0.25em), bay bổng trong 45% không gian âm đen tuyền.
-  - **Sub-Brand / Category:** Classic Transitional Serif Italic thanh thoát đặt ngay bên dưới.
+  - *Tiêu đề chính:* Didot Serif kết hợp chữ Thư Pháp Tân Thời uốn lượn mềm mại.
+  - *Chất liệu chữ:* Dập chìm ép kim nhũ vàng (Hot foil stamped) trên nền giấy Dó hoặc đá cẩm thạch.
+  - *Khối thông tin:* Sans-serif tối giản quốc tế.
+
+### Công thức 9: THE HEROIC DRAGON 3D MONUMENT (Đại Hào Quang Rồng Vàng & Trống Đồng 3D)
+- **Áp dụng cho:** `STYLE_020_CYBER_MYTHIC_GOLDEN_DRAGON_DONG_SON`, Đại sự kiện, Khát vọng thịnh vượng.
+- **Cấu trúc:**
+  - *Hero Headline:* 3D Beveled Chrome Gold Display có rãnh vân kim loại phản quang (phóng to 3x, in HOA, neo vững trên chân trời đồng lúa).
+  - *Credit line:* Modern Geometric Sans-serif in hoa thanh mảnh, tracking rộng, màu vàng ngà kem, kết nối bằng chữ "x" duyên dáng.
+
+### Công thức 10: THE IMPERIAL GOLD & EMERALD PEDESTAL (Bảo Vật Hoàng Kim Trên Bệ Sương Bích Ngọc)
+- **Áp dụng cho:** `STYLE_021_IMPERIAL_GOLD_DRUM_EMERALD_PEDESTAL`, Quà tặng phong thủy mạ vàng 24K, Tích sản hoàng gia.
+- **Cấu trúc:**
+  - *Headline:* Imperial Chiseled Heritage Serif (Bodoni/Didot) 2 dòng đối xứng cân bằng tuyệt đối, màu kem ngà ánh xanh ngọc.
+  - *Decorative Accents:* Cặp chim Lạc Đông Sơn nét vẽ line-art mạ vàng sải cánh đối xứng ngay dưới chân chữ.
+  - *Thông số & Chữ ký:* Font Swiss Sans-serif (Inter Tight) phân cấp trang nhã, căn giữa đáy ảnh.
+
+### Công thức 11: THE OBSIDIAN PORCELAIN POETRY (Thơ Ca Gốm Sứ Trên Hư Không Đen Tuyền)
+- **Áp dụng cho:** `STYLE_022_CHU_DAU_ROYAL_CERAMICS_SURREAL_DIORAMA`, Gốm sứ mỹ nghệ, Triển lãm độc bản.
+- **Cấu trúc:**
+  - *Hero Brand:* Haute-Couture Ultra-Light Hairline Serif (SangBleu/Canela) siêu mảnh, dãn cách chữ cực rộng (+0.25em), bồng bềnh trong 45% không gian âm đen tuyền.
+  - *Sub-Brand / Category:* Classic Transitional Serif Italic thanh thoát đặt ngay bên dưới.
 
 ---
 
-## 2. Danh Mục Các Font Chữ Tiêu Biểu Trong Giới Thiết Kế Cao Cấp
+## 2. Kỹ Thuật Chế Tác Đồ Họa Typography (Graphic Craft & Engineering)
 
-| Nhóm Font | Tên Font Điển Hình | Đặc Trưng Thị Giác | Cảm Xúc Mang Lại |
-| :--- | :--- | :--- | :--- |
-| **Luxury Display Serif** | *Cinzel Decorative, Trajan Pro, Didot, Playfair Display* | Nét thanh nét đậm tương phản cực độ, chân chữ sắc bén như lưỡi dao, tỷ lệ La Mã vương giả. | Uy quyền, di sản lâu đời, sang trọng hoàng gia, quý phái. |
-| **3D Beveled Metallic Display** | *3D Chrome Gold Inline Bevel, Copperplate 3D, Druk 3D* | Đổ khối kim loại 3D mạ vàng, vát cạnh kép 45°, rãnh chìm có vân sọc kim loại phản quang. | Hùng tráng, đồ sộ, tương lai di sản, bản sắc dân tộc hùng cường. |
-| **Imperial Chiseled Heritage Serif** | *Bodoni Poster Imperial, Didot Vietnamese Refined, Playfair SC* | Chân chữ sắc bén tạc đá cung đình, dấu tiếng Việt được trau chuốt thanh tao không dính thân chữ. | Tôn quý hoàng gia, bảo vật trường tồn, chuẩn xác văn hóa. |
-| **Haute-Couture Hairline Serif** | *SangBleu Empire Hairline, Canela Light, Saol Display* | Nét mỏng như sợi tơ, chân chữ như lưỡi dao cạo, dãn cách chữ cực rộng trong không gian âm đen. | Đẳng cấp bảo tàng, thời thượng tối cao, tinh hoa độc bản. |
-| **Expressive Calligraphy Script** | *Parisian Cursive, Great Vibes, Allura, Amsterdam, Thư Pháp Tân Thời* | Nét cọ uốn lượn liên hoàn, độ nảy baseline tự nhiên, góc nghiêng 12–15°. | Cảm xúc, chân thành, cái chạm con người (*human touch*), nghệ thuật. |
-| **Geometric & Swiss Sans** | *Neue Haas Grotesk, Helvetica Now, Futura, Inter Tight, Gilroy* | Hình học hoàn hảo, đường cong tối giản, cấu trúc kiến trúc vững chãi. | Độc lập, minh bạch, sức mạnh tổ chức, hiện đại quốc tế. |
-| **Editorial Fashion Serif** | *Editorial New, Ogg, Canela, Roslindale* | Dáng cao thanh thoát, nét vẽ phóng khoáng, tính thẩm mỹ báo chí New York/Paris. | Trí tuệ, chuyên gia, thời thượng, đẳng cấp văn hóa. |
-| **Monospace / Technical Micro** | *GT America Mono, Space Mono, Roboto Mono* | Khoảng cách ký tự đều đặn kiểu máy đánh chữ hiện đại, kích thước nhỏ 7–9pt. | Độ chuẩn xác tài chính, số liệu thực, tính bảo chứng kỹ thuật. |
+1. **Phân Rã & Khóa Bố Cục Đa Tầng (Quy tắc 30 - 40 - 100):** Dòng dẫn nhập nhỏ (30%) $\rightarrow$ Dòng nối nhịp thư pháp vừa (40%) $\rightarrow$ Dòng tâm điểm viết HOA cực đại (100%).
+2. **Đổ Khối Kim Loại 3D & Vát Cạnh 45° (3D Bevel & Emboss):** Gờ phản quang nổi rõ, dải chuyển sắc ánh kim đa điểm từ vàng chói `#FFF3B0` sang champagne `#D4AF37`, điểm lóe sáng (specular gleams) chân thực.
+3. **Đổ Bóng Đa Tầng (Ambient Occlusion & Soft Drop Shadow):** Lớp bóng tiếp xúc sát chân chữ (contact shadow) kết hợp bóng khuếch tán xa tạo cảm giác chữ lơ lửng cách mặt giấy 2-3mm.
+4. **Bộ Soát Lỗi Dấu Tiếng Việt 2 Tầng (Orthography & Diacritical Guard):**
+   - *Tầng 1:* Quét toàn bộ từ có dấu phức tạp (`ươ`, `iê`, `oạ`, `uâ`, `ẵ`, dấu hỏi/ngã), bảo đảm 100% tiếng Việt chuẩn chính tả.
+   - *Tầng 2:* Ép lệnh kết xuất AI: `"exact Vietnamese typography with full accurate diacritical marks and accents, zero missing accents"`.
+5. **Ép Kim Nhũ Vàng Trên Giấy Sần (Hot Foil Stamping on Textured Paper):** Chữ và nền hòa quyện với sớ giấy sần tự nhiên, không phẳng lỳ kỹ thuật số.
 
 ---
 
-## 3. Cách Designer Chuyên Nghiệp "Design Ra Chữ" (Graphic Craft & Engineering)
-
-Để tạo ra một cụm Typography đẳng cấp như ảnh tham chiếu, designer không bao giờ chỉ gõ chữ ra rồi để đó. Họ áp dụng **5 kỹ thuật chế tác đồ họa (Graphic Crafting Steps)**:
-
-### Kỹ thuật 1: Phân Rã & Khóa Bố Cục Đa Tầng (Multi-Tier Lockup Hierarchy)
-- **Quy tắc 30 - 15 - 100:**
-  - Dòng dẫn nhập (Line 1): Kích thước nhỏ (~30%), đứng thẳng, nghiêm trang để mở đầu câu chuyện.
-  - Dòng kết nối (Line 2): Kích thước vừa (~40%), phông chữ viết tay mềm mại, đặt nghiêng, vắt nhẹ đuôi chữ chạm vào dòng 1 hoặc dòng 3 để tạo sự liên kết tự nhiên.
-  - Dòng tâm điểm (Line 3): Kích thước cực đại (100%), chiếm trọn trọng lượng thị giác, viết HOA, làm bệ đỡ vững chắc cho toàn bộ cụm chữ.
-
-### Kỹ thuật 2: Đổ Khối Kim Loại 3D & Vát Cạnh Sắc Nét (3D Bevel & Emboss Shader)
-- Không dùng hiệu ứng chữ phẳng (Flat Color) đơn điệu cho từ khóa chính.
-- Designer tạo khối 3D bằng:
-  - **Beveling (Vát cạnh 45 độ):** Tạo đường gờ phản quang nổi rõ trên từng nét chữ.
-  - **Multi-stop Metallic Gradient (Dải dốc màu kim loại đa điểm):** Đi từ vàng sáng chói mắt `#FFF3B0` (vệt sáng bóng) -> vàng champagne trung tính `#D4AF37` -> vàng đồng trầm `#8C6E26` -> bóng đổ tối ở góc khuất `#4A3A10`.
-  - **Specular Highlights (Điểm lóe sáng):** Đặt các tia sáng lóe nhỏ ở góc chữ kim loại để tạo cảm giác vàng thật dưới ánh đèn studio.
-
-### Kỹ thuật 3: Đổ Bóng Thực Tế & Chiều Sâu (Ambient Occlusion & Drop Shadow)
-- Đặt một lớp bóng đổ mềm (Soft Cast Shadow) đa tầng dưới chân chữ:
-  - Lớp 1: Bóng sát chân chữ (Contact Shadow) màu đen/nâu sẫm mờ 30% để gắn chữ vào mặt nền.
-  - Lớp 2: Bóng khuếch tán xa (Ambient Shadow) tạo cảm giác chữ đang lơ lửng cách mặt giấy khoảng 2-3mm.
-
-### Kỹ thuật 4: Xử Lý Dấu Tiếng Việt Tinh Tế (Vietnamese Diacritical Craft)
-- Chữ tiếng Việt có các dấu (sắc, huyền, hỏi, ngã, nặng, nón â, ê, ô, móc ư, ơ, đ).
-- Designer chuyên nghiệp tinh chỉnh dấu:
-  - Dấu không được quá to hay dính sát vào thân chữ làm mất dáng chữ La Mã.
-  - Dấu sắc/huyền được gọt góc thanh mảnh đồng điệu với nét thanh của font Serif.
-  - Dấu hỏi/ngã uốn lượn nhịp nhàng theo nét thư pháp của dòng script.
-
-### Kỹ thuật 5: Kỹ Thuật Ép Kim Lá Vàng Trên Nền Giấy Dó (Hot Foil Stamping on Textured Paper)
-- Để chữ và nền hòa quyện tự nhiên như ấn phẩm in cao cấp:
-  - Bề mặt giấy Dó / giấy mỹ thuật sần (*uncoated paper grain*) được áp lớp hòa trộn nhẹ lên mép chữ, khiến cho chữ trông như được dập chìm (*embossed*) và ép nhũ vàng thực tế vào sớ giấy, chứ không phải hình dán kỹ thuật số.
+## 3. Hệ Thống Chữ Ký Cố Vấn Tích Hợp (The 4-Tier Cohesive Stack)
+- **Cấm trơ trọi:** Tuyệt đối không để chữ ký "Tiến" trơ trọi một mình không có thông tin.
+- **Cấm đường kẻ cắt đôi trang:** Tuyệt đối không vẽ một vạch kẻ ngang dài hết khổ giấy chia cắt bố cục poster.
+- **Cấu trúc cụm 4 tầng thống nhất bắt buộc:**
+  ```
+  / Tiến /                       ◄── [Dòng 1: Chữ ký tay nghệ thuật]
+  Dương Quang Tiến               ◄── [Dòng 2: Họ và tên Semi-bold]
+  Trưởng nhóm kinh doanh Manulife ◄── [Dòng 3: Chức danh & Tổ chức]
+  0935 074 268                   ◄── [Dòng 4: Số điện thoại chính thức]
+  ```
+- **Vị trí đặt:** Đặt trọn vẹn cả cụm ở **Góc dưới bên phải (Bottom-Right)**, **Góc dưới bên trái (Bottom-Left)**, hoặc **Căn giữa đáy (Bottom-Center)**, hòa vào không gian âm (negative space 35–45%) của tác phẩm.
 
 ---
 
-## 4. Hệ Thống Chữ Ký Cố Vấn Tích Hợp (Integrated Signature System)
-- **Cấm trơ trọi:** Tuyệt đối không để chữ ký "Tiến" trơ trọi một mình ở chính giữa đáy ảnh.
-- **Khối đồng bộ 4 thành tố:** Phải luôn đi kèm họ tên, chức danh và số điện thoại đã xác minh:
-  1. Chữ ký viết tay: `"Tiến"`
-  2. Họ và tên: `Dương Quang Tiến`
-  3. Chức danh & Tổ chức: `Trưởng nhóm kinh doanh Manulife`
-  4. Số điện thoại: `0935 074 268`
-- **Bố cục:** Đặt lệch trang nhã ở góc âm bên phải (Bottom-Right) hoặc phân tách đối xứng hai bên đáy (Split Footer), tích hợp tự nhiên vào không gian âm (negative space) với đường chỉ vàng champagne siêu mảnh 0.5pt.
-
----
-
-## 5. Thư Viện Tài Nguyên Font Chữ Toàn Diện
-Xem danh mục chi tiết hơn 30 font chữ cao cấp và các công thức phối font chuẩn quốc tế tại:
+## 4. Thư Viện Tài Nguyên Font Chữ Chi Tiết
+Xem danh mục tra cứu 30+ font chữ cao cấp kèm bảng tra cứu từ khóa AI tại:
 👉 [`library/typography/MASTER_FONT_CATALOG.md`](file:///d:/POSTER_PROMPT_SYSTEM_V2/library/typography/MASTER_FONT_CATALOG.md).
-

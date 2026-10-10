@@ -173,16 +173,16 @@
 Theo yêu cầu chính thức, khối chữ ký không bao giờ được đặt trơ trọi một mình:
 
 ```
-[BỐ CỤC KHỐI CHỮ KÝ GÓC PHẢI - RECOMMENDED]
+[CỤM NHẬN DIỆN THỐNG NHẤT 4 TẦNG (THE 4-TIER COHESIVE STACK) - RECOMMENDED]
 
-                       / Tiến /  ◄── [Chữ ký tay nghệ thuật, mực xanh ngọc hoặc vàng lá]
-  ───────────────────────────────  ◄── [Vạch chỉ vàng champagne siêu mảnh 0.5pt]
-  Dương Quang Tiến • Trưởng nhóm kinh doanh Manulife • 0935 074 268
-  ▲
-  └── [Font Swiss Sans-serif hoặc Inter Tight 8pt, cân bằng, rõ ràng trên di động]
+                       / Tiến /     ◄── [Dòng 1: Chữ ký tay nghệ thuật, mực xanh ngọc hoặc vàng lá]
+                   Dương Quang Tiến ◄── [Dòng 2: Font Swiss Sans-serif Semi-bold]
+          Trưởng nhóm kinh doanh    ◄── [Dòng 3: Font Regular thanh lịch]
+                        Manulife    
+                    0935 074 268    ◄── [Dòng 4: Font Monospace hoặc Clean Sans rõ nét]
 ```
 
-* **Vị trí chuẩn:** Đặt trang nhã ở **góc âm bên phải (Bottom-Right)** hoặc **góc âm bên trái (Bottom-Left)**, cách mép ảnh an toàn 8–10%.
+* **Vị trí chuẩn:** Đặt trọn vẹn cả cụm ở **góc âm bên phải (Bottom-Right)**, **góc âm bên trái (Bottom-Left)** hoặc **chính giữa đáy**, cách mép ảnh an toàn 8–10%. Tuyệt đối **CẤM ĐƯỜNG KẺ CẮT ĐÔI TRANG** chia cắt bố cục poster.
 * **Đầy đủ 4 thành tố bất biến:**
   1. Chữ ký viết tay: `"Tiến"`
   2. Họ và tên: `Dương Quang Tiến`

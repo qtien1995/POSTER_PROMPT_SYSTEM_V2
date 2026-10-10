@@ -1,4 +1,4 @@
-# POSTER STUDIO & MASTER PROMPT SYSTEM V2.5 — ROOT AUTHORITY
+# POSTER STUDIO & MASTER PROMPT SYSTEM V3.0 — ROOT AUTHORITY
 
 Read this file first. This workspace is a **dual-engine poster production system**:
 1. **Direct Image Generator:** Direct visual synthesis using the built-in image generation engine (`generate_image`).

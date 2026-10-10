@@ -18,11 +18,12 @@ When calling `generate_image`:
   - Explicitly include instructions for graphic design elements, negative space, and on-image Vietnamese typography.
   - Instruct the model to render crisp, editorial-quality typography for the headline, subhead, and signature.
 - **`ImageName`**: Lowercase with underscores, 2-3 words (e.g., `poster_xanh_uoc_mo`, `manulife_wealth_metaphor`, `advisor_tien_editorial`).
-- **`AspectRatio`**: Match user target platform:
-  - `'4:5'` (Default for Instagram/Facebook feed poster - map to closest supported or 3:4 / 1:1 if needed; note tool supported values: `'1:1'`, `'2:3'`, `'3:2'`, `'3:4'`, `'4:3'`, `'9:16'`, `'16:9'`. If 4:5 is not directly in the enum, use `'3:4'` or `'1:1'`).
-  - `'9:16'` (Story, Reels, TikTok visual).
-  - `'1:1'` (Square feed).
-  - `'16:9'` (Landscape/banner).
+- **`AspectRatio`**: Chuẩn hóa theo bảng ánh xạ thông minh (Smart Aspect Ratio Mapping):
+  - Khi yêu cầu `'4:5'` (Chuẩn Facebook / Instagram Feed): Trong lệnh gọi `generate_image`, **tự động ánh xạ sang `'3:4'`** (tỷ lệ gần nhất được hỗ trợ bởi tool API để tránh lỗi), trong khi trong Master Production Prompt cung cấp cho người dùng vẫn giữ nguyên `'4:5'` (hoặc `--ar 4:5`) cho Midjourney/FLUX.
+  - Khi yêu cầu `'1:1'`: Sử dụng `'1:1'` (Square Feed / Carousel).
+  - Khi yêu cầu `'9:16'`: Sử dụng `'9:16'` (Story / Reels / TikTok).
+  - Khi yêu cầu `'16:9'`: Sử dụng `'16:9'` (Landscape / Web Banner / Youtube).
+  - Các tỷ lệ khác được hỗ trợ trực tiếp bởi API: `'2:3'`, `'3:2'`, `'4:3'`.
 - **`ImagePaths`**: When learning DNA from a reference image in the workspace or artifact directory, pass up to 3 image file paths in `ImagePaths` to guide visual generation.
 
 ---

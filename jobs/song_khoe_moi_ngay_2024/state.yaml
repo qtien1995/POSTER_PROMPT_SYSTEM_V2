@@ -1,0 +1,24 @@
+project_name: song_khoe_moi_ngay_2024
+campaign: Sống Khỏe Mỗi Ngày 2024 - Manulife Việt Nam
+advisor:
+  full_name: Dương Quang Tiến
+  title: Trưởng nhóm kinh doanh
+  organization: Manulife
+  phone: '0935 074 268'
+  handwritten_mark: 'Tiến'
+style: TACTILE_PAPERCRAFT_DIORAMA
+aspect_ratio: '1:1'
+frames_count: 4
+language: vi
+execution_mode: hybrid
+status: completed_v3_master
+cards:
+  - id: frame_1_titan
+    name: Thẻ Titan (250 Triệu/năm) - Gia Đình Trẻ
+  - id: frame_2_vang
+    name: Thẻ Vàng (500 Triệu/năm) - Trụ Cột Vững Vàng
+  - id: frame_3_bach_kim
+    name: Thẻ Bạch Kim (1 Tỷ/năm) - Đẳng Cấp Quốc Tế
+  - id: frame_4_kim_cuong
+    name: Thẻ Kim Cương (2 Tỷ/năm) - Thượng Lưu Toàn Cầu
+last_updated: '2026-10-10'

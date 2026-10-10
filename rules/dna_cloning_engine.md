@@ -71,3 +71,16 @@ Posters created by this engine are **not raw photos with pasted text**; they are
 4. **Execution:**
    - Call `generate_image` using the extracted DNA and target copy to generate the direct artwork artifact.
    - Provide the 18-block Master Production Prompt with the cloned DNA explicitly defined.
+
+---
+
+## 4. Cơ Chế Tự Động Hấp Thụ & Mở Rộng Thư Viện Mở (Auto-Ingestion & Open Expansion Pipeline)
+
+Hệ thống **không bị giới hạn bởi số lượng phong cách** (Unbounded Trend Engine):
+1. **Tự Động Lưu Thẻ DNA:** Khi học style mới thành công, hệ thống tự động ghi thẻ DNA vào `library/dna/DNA_<MÃ_HIỆU>_<TÊN_STYLE>.md` theo mẫu chuẩn.
+2. **Tự Động Nâng Cấp Hệ Thống:**
+   - Nếu style thuộc về 1 trong các trụ cột nghệ thuật hoặc cấu trúc thị giác có sẵn $\rightarrow$ Tự động tích hợp làm biến thể cao cấp để tăng sức mạnh cho trụ cột đó.
+   - Nếu style đại diện cho một trường phái hoàn toàn mới (ví dụ: *Risograph, Neo-Folk, Biophilic 3D, Origami...*) $\rightarrow$ Tự động đăng ký thêm thành Style mới trong [`MASTER_STYLE_SYSTEM_V3.md`](file:///d:/POSTER_PROMPT_SYSTEM_V2/library/styles/MASTER_STYLE_SYSTEM_V3.md).
+3. **Tiêu Chuẩn Duyệt DNA Mới:**
+   - ✅ Thẩm mỹ cao, bề mặt chất liệu phong phú, giàu cảm xúc, không lỗi thời.
+   - ❌ Triệt để loại bỏ hình ảnh người nhựa AI (*plastic skin*) và các sáo rỗng AI thông thường.
