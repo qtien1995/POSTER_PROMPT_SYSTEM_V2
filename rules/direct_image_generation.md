@@ -5,9 +5,9 @@ This rule defines how the system directly synthesizes visual posters using the b
 ---
 
 ## 1. When to Trigger Direct Image Generation
-- **`HYBRID` Mode (Default):** Always generate the direct image AND output the Master Production Prompt.
-- **`DIRECT_IMAGE` Mode:** When user explicitly asks to "tạo ảnh", "vẽ ảnh", "render ảnh", "làm hình này".
-- If the user explicitly asks for "chỉ prompt" or "prompt only", skip image generation and output prompt only.
+- **`PROMPT_ONLY` Mode (Default):** Do NOT invoke `generate_image`. Produce the universal 18-block Master Production Prompt only, allowing the user to test externally.
+- **`DIRECT_IMAGE` Trigger:** Invoke `generate_image` **ONLY WHEN the user explicitly requests image creation** (e.g., *"tạo ảnh"*, *"vẽ ảnh"*, *"render ảnh"*, *"hãy vẽ hình"*, *"tạo ảnh bằng prompt này"*).
+- **`HYBRID` Trigger:** Only generate both image and prompt simultaneously when the user explicitly requests both.
 
 ---
 

@@ -19,18 +19,22 @@ Quy trình sản xuất poster và Master Prompt được chuẩn hóa theo 5 b�
 
 ## 3. LỰA CHỌN PHONG CÁCH & XUẤT SẢN PHẨM (STYLE SELECTION & EXECUTION)
 
-### A. Luồng Mặc Định: 1 Hướng Mạnh Nhất — Tối Ưu Tốc Độ (One-Best-Direction)
-- Trừ khi người dùng có yêu cầu khác, hệ thống **tự động phân tích và chọn 1 phong cách thiết kế mạnh nhất** (từ 2 Trụ cột Flagship Papercraft 3D/Comic Timeline, 10 phong cách Art-Centric hoặc các trụ cột kỹ thuật).
-- **Không bắt người dùng duyệt 3 concept qua lại.** Hệ thống tiến hành sản xuất ngay deliverable hoàn chỉnh theo chế độ thực thi:
-  - **`HYBRID` (Mặc định):** Trực tiếp tạo ảnh hoàn thiện bằng `generate_image` ĐỒNG THỜI xuất Master Production Prompt 18 khối chuẩn.
-  - **`DIRECT_IMAGE`:** Chỉ tập trung tạo ảnh hiển thị ngay.
-  - **`PROMPT_ONLY`:** Chỉ xuất Master Production Prompt chuẩn công nghiệp.
+### A. Luồng Mặc Định: PROMPT_ONLY (Chốt Nội Dung, Style, PA → Viết Bộ 4 Prompt Để Test)
+- **Quy trình chuẩn:**
+  1. Thảo luận, chốt nội dung và cốt truyện 4 phân đoạn (Headline, Subhead, thông điệp cốt lõi).
+  2. Xác định phong cách mỹ thuật hoặc đưa ra các Phương Án (PA1, PA2, PA3...) để người dùng lựa chọn nếu cần.
+  3. Sau khi người dùng **chốt nội dung, style, hoặc chọn PA**, hệ thống tiến hành viết **Bộ Prompt Thực Chiến đồng bộ cho 4 ảnh (Carousel 4 Frames)** để người dùng tự copy đi test trên Midjourney, FLUX, ChatGPT Images 2.5, Google Flow.
+  4. **Tuyệt đối KHÔNG tự ý tạo ảnh bằng AI trong luồng mặc định.**
 
-### B. Luồng Đề Xuất 3 Phong Cách (Chỉ Kích Hoạt Khi Được Yêu Cầu)
-- Chỉ khi người dùng nói rõ: `"gợi ý phong cách"`, `"cho tôi 3 phong cách"`, `"đổi style"`, `"style pivot"`:
-  1. Phân tích nội dung và đề xuất **3 phong cách thiết kế khác biệt hoàn toàn** về cảm xúc và chất liệu mỹ thuật, có đánh dấu 1 hướng được khuyến nghị (Recommended).
-  2. Cung cấp mô tả trực quan ngắn gọn cho mỗi phong cách.
-  3. Sau khi người dùng chọn phong cách, tiến hành xuất sản phẩm hoàn thiện.
+### B. Kích Hoạt Sinh Ảnh AI Trực Tiếp (`generate_image`)
+- **CHỈ KHI NÀO** người dùng có yêu cầu rõ ràng:
+  - Ví dụ: *"Tạo ảnh"*, *"Vẽ hình này"*, *"Render ảnh cho tôi xem"*, *"Hãy tạo 4 ảnh từ prompt trên"*, hoặc *"Chọn PA1 và vẽ 4 ảnh luôn"*.
+  - Lúc đó, hệ thống mới gọi công cụ `generate_image`, lưu file vào thư mục `jobs/<PROJECT>/` và cung cấp đường link nhấp được trực tiếp.
+
+### C. 3 Chế Độ Vận Hành Hệ Thống:
+- **`PROMPT_ONLY` (Mặc định):** Xuất Bộ 4 Prompt Thực Chiến sau khi chốt nội dung, style, PA để người dùng tự test.
+- **`DIRECT_IMAGE`:** Chỉ tập trung tạo ảnh hiển thị ngay khi người dùng yêu cầu tạo ảnh.
+- **`HYBRID`:** Vừa tạo ảnh vừa xuất bộ prompt khi người dùng yêu cầu rõ ràng cả hai.
 
 ---
 

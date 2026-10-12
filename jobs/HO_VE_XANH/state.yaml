@@ -1,0 +1,38 @@
+job_id: HO_VE_XANH
+product: "Hộ Vệ Xanh - Bảo hiểm tử vong và thương tật do Tai Nạn"
+code: "ADD 2025"
+advisor:
+  name: "Dương Quang Tiến"
+  title: "Trưởng nhóm kinh doanh"
+  organization: "Manulife"
+  phone: "0935 074 268"
+  signature: "Tiến"
+renders:
+  vertical_3x4:
+    - file: "01_hero_la_chan_toan_dien.jpg"
+    - file: "02_deepdive_gay_xuong_noi_tang.jpg"
+    - file: "03_diem_tua_vung_vang_tu_vong_tpd.jpg"
+    - file: "04_infographic_dac_quyen_tc.jpg"
+  carousel_1x1:
+    style_1_glassmorphism:
+      - file: "style1_frame1_hook_overview.jpg"
+      - file: "style1_frame2_gay_xuong_200tr.jpg"
+      - file: "style1_frame3_noi_tang_300tr.jpg"
+      - file: "style1_frame4_so_sanh_tc.jpg"
+    style_2_papercraft:
+      - file: "style2_frame1_papercraft_hook.jpg"
+    style_3_flat_vector:
+      - file: "style3_frame1_flat_vector_hook.jpg"
+    style_hybrid_blueprint:
+      - file: "hybrid_blueprint_frame1_hook.jpg"
+      - file: "hybrid_blueprint_frame2_gay_xuong.jpg"
+    style_kintsugi_demo:
+      - file: "style_kintsugi_sample_demo.jpg"
+prompt_files:
+  - "MASTER_PROMPTS_FINAL_HYBRID_BLUEPRINT_1X1.md"
+  - "MASTER_PROMPTS_STYLE_1_GLASSMORPHISM_BENTO_1X1.md"
+  - "MASTER_PROMPTS_STYLE_2_PAPERCRAFT_DIORAMA_1X1.md"
+  - "MASTER_PROMPTS_STYLE_3_FLAT_VECTOR_EDITORIAL_1X1.md"
+  - "MASTER_PROMPTS_4_ARTISTIC_STYLES_SAMPLE.md"
+status: "COMPLETED"
+updated_at: "2026-10-11T21:47:00Z"

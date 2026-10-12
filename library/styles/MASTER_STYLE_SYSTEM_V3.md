@@ -56,6 +56,15 @@
 
 ---
 
+## III.B. TẦNG 3.B: BỘ PHONG CÁCH CỘNG ĐỒNG TINH HOA TỪ PROMPTS.CHAT
+*(Tích hợp trực tiếp từ kho tri thức 2,435 prompt tại [`library/prompts_chat/`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/prompts_chat/) & CLI [`scripts/prompts_chat_tool.py`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/scripts/prompts_chat_tool.py))*
+
+- 🌟 [`STYLE_024_ART_DECO_VINTAGE_TRAVEL_POSTER`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_024_ART_DECO_VINTAGE_TRAVEL_POSTER.md): Poster du lịch hoài niệm châu Âu thập niên 1930, hình học Streamline Moderne, chuyển sắc airbrush mượt mà, đại cảnh bến cảng bình yên đón bình minh, khơi gợi khát vọng hưu trí an nhàn và tự do khám phá.
+- 🌟 [`STYLE_025_EXPLODED_VIEW_TECHNICAL_INFOGRAPHIC`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_025_EXPLODED_VIEW_TECHNICAL_INFOGRAPHIC.md): Sa bàn cắt lớp 3D CAD bóc tách lơ lửng, đường chỉ dẫn leader-line màu trắng mảnh, minh bạch từng tầng bảo vệ (Móng bảo vệ $\rightarrow$ Quỹ y tế $\rightarrow$ Gia tăng tài sản).
+- 🌟 [`STYLE_026_WHIMSICAL_3D_ISOMETRIC_MINIATURE_DIORAMA`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_026_WHIMSICAL_3D_ISOMETRIC_MINIATURE_DIORAMA.md): Tiểu cảnh chibi 3D hộp mù (blind-box toy) đất nặn polymer mịn ấm cúng, đèn vàng nội thất hắt qua cửa sổ, thảm cỏ nỉ nhung, mang lại cảm xúc che chở mái ấm và chuẩn bị quỹ học vấn con thơ.
+
+---
+
 ## IV. BẢNG 8 CẤU TRÚC THỊ GIÁC TINH TUYỂN V3.0 (MASTER VISUAL ARCHITECTURES)
 *(Thay thế hoàn toàn 15 pattern cũ, tập trung 100% vào chất liệu thật và biểu tượng có hồn)*
 

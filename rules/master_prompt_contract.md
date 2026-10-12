@@ -1,77 +1,80 @@
-# Master Prompt Contract
+# Quy Chuẩn Bộ Prompt Thực Chiến (Production Prompt Contract V3.1)
 
-A final output is valid only when it is **ONE coherent production master prompt** for the requested poster/image.
+Hệ thống chính thức **loại bỏ định dạng prompt 18 khối cồng kềnh**, thay thế bằng **Bộ Prompt Thực Chiến (Mặc định Bộ 4 Ảnh / 4-Frame Carousel Suite)**.
 
-## Mandatory blocks
-The master prompt should contain these sections in one prompt:
+Khi người dùng chốt nội dung, thông điệp và phong cách, hệ thống sẽ viết bộ prompt tương ứng cho 4 ảnh (hoặc số lượng ảnh người dùng yêu cầu) để người dùng tự copy đi kiểm thử trên Midjourney, FLUX, ChatGPT Images 2.5 hoặc Google Flow.
 
-1. `ROLE & OBJECTIVE`
-2. `CORE MESSAGE`
-3. `VISUAL THESIS`
-4. `HERO VISUAL`
-5. `SUBJECT + ACTION + RELATIONSHIPS`
-6. `ENVIRONMENT / SCENE`
-7. `VISUAL METAPHOR` when relevant
-8. `COMPOSITION & HIERARCHY`
-9. `STYLE / VISUAL DNA`
-10. `PALETTE / LIGHTING / MATERIAL` as relevant
-11. `ON-IMAGE COPY`
-12. `TEXT HIERARCHY`
-13. `TEXT PLACEMENT`
-14. `SIGNATURE SYSTEM`
-15. `ALLOWED_TEXT`
-16. `NEGATIVE CONSTRAINTS`
-17. `TECHNICAL`
-18. `ACCURACY LOCK`
+---
 
-Do not split these into separate prompts.
+## 1. Cấu Trúc Tổng Thể Của Bộ 4 Prompt
 
-## Nghiêm Cấm Chia Nhỏ Prompt Theo Từng Nền Tảng (No Multi-Platform Split Prompts)
-- **TUYỆT ĐỐI KHÔNG** chia nhỏ hoặc xuất thêm mục "Bộ Prompt Tối Ưu Từng Nền Tảng" (Midjourney, FLUX, DALL-E/ChatGPT, Flow...).
-- Hệ thống chỉ xuất **DUY NHẤT 1 MASTER PRODUCTION PROMPT TOÀN NĂNG** (đầy đủ 18 khối chuẩn), tương thích trực tiếp cho mọi engine AI mà không cần phải phân mảnh hay cắt xén nội dung.
+Mỗi đợt xuất bản bao gồm 2 phần chính:
 
-## Copy is part of the design
-The prompt must explicitly state the exact text that should appear inside the artwork.
-Include only copy that contributes to the communication goal.
+### Phần A: Thông Số Visual DNA Đồng Bộ (Shared Visual DNA)
+Được nêu ở đầu bộ prompt để đảm bảo cả 4 ảnh có phong cách thẩm mỹ đồng nhất:
+- **Phong cách nghệ thuật đã chọn:** (Ví dụ: The New Yorker Comic Timeline, Papercraft 3D, Art Deco Travel, Modern Flat Vector, Kintsugi...).
+- **Chất liệu nền & Shaders:** (Giấy Dó ngà sần, vải gấm thêu chỉ vàng, đá cẩm thạch, gốm men rạn...).
+- **Bảng màu chấm phá (Color Accents):** Mã màu chủ đạo (Emerald Green `#004D2C`, Ochre Gold `#D4AF37`, Ivory Cream `#FBF9F4`...).
+- **Tỷ lệ khung hình đồng bộ:** Mặc định `1:1` vuông (chuẩn Facebook/Instagram Feed) hoặc `4:5` dọc.
 
-If source content is too long:
-- keep the core meaning;
-- compress into poster-readable copy;
-- use hierarchy instead of paragraphs;
-- prefer one strong headline and a small amount of supporting text;
-- do not shrink text merely to fit everything.
+### Phần B: Chi Tiết Prompt Cho Từng Khung Hình (Frame 1 → Frame 4)
 
-If the user explicitly provides exact wording and asks to preserve it, preserve it verbatim.
+Mỗi khung hình đảm nhận một mắt xích trong kịch bản tự sự:
+- **FRAME 01: THE HOOK & MENTAL MODEL (Dừng lướt & Thức tỉnh)**
+- **FRAME 02: THE CONTRAST & BLINDSPOT (Điểm mù & Nghịch lý)**
+- **FRAME 03: THE ARCHITECTURE & MATH (Cơ chế bảo vệ & Công thức số liệu)**
+- **FRAME 04: THE RESOLUTION & ADVISOR STACK (Đúc kết, Kêu gọi hành động & Chữ ký cố vấn)**
 
-## Subject/action lock
-Never describe only a subject noun. Lock the important action and relationships.
-Example fields:
-- who is present;
-- who holds/touches/looks at what;
-- what object belongs to or connects to what;
-- where a transformation begins and ends;
-- what must remain physically continuous.
+---
 
-## Composition rule
-One poster should normally have:
-- one core message;
-- one dominant focal point;
-- clear eye path;
-- intentional negative space;
-- readable text zones.
+## 2. Quy Chuẩn Cấu Trúc Của Từng Prompt Đơn Lẻ
 
-## ALLOWED_TEXT rule
-List every exact rendered string, including Signature System strings.
-Then explicitly state:
-`Render exactly and only the ALLOWED_TEXT strings. Do not add any other letters, numbers, labels, logos, pseudo-text, watermark, instruction text, or placeholder text.`
+Thay vì 18 khối máy móc, mỗi prompt cho từng frame được cấu trúc tinh gọn theo các trường thông tin sau:
 
-Do not place design instructions inside ALLOWED_TEXT.
+```text
+ROLE & OBJECTIVE:
+[Thể loại ảnh, mục tiêu dừng lướt và thông điệp cần truyền tải trong frame này.]
 
-## Exact Vietnamese text reality
-Image models may misspell Vietnamese. The prompt must still request exact text. If the returned render contains text errors, repair via returned-image feedback; do not weaken the intended copy just because the renderer may fail.
+VISUAL THESIS & HERO METAPHOR:
+[Mô tả cụ thể chủ thể chính, hành động, biểu tượng ẩn dụ và các chi tiết tương tác trong bối cảnh. Tuyệt đối không dùng người mẫu AI da nhựa giả tạo.]
 
-## Negative constraints
-Use negatives to protect the concept, not to create a huge generic blacklist. Include only likely failure modes for that design plus the core anti-AI constraints.
+STYLE & MATERIALITY:
+[Chất liệu thật, kỹ thuật tạo hình, bề mặt vân giấy/gốm/vải, ánh sáng vật lý.]
 
-## Standalone rule
-The final master prompt must make sense if copied alone into an image generator. Do not write `same as above`, `use previous style`, or depend on hidden context.
+COMPOSITION & ASPECT RATIO:
+[Tỷ lệ khung hình (1:1 hoặc 4:5). Phân bổ vùng âm bản (negative space 35-45%) dành cho chữ tiếng Việt.]
+
+ON-IMAGE COPY (EXACT VIETNAMESE):
+Headline:
+"[Tiêu đề chính chuẩn 100% tiếng Việt có dấu]"
+Subhead:
+"[Dòng phụ hoặc thông số số liệu]"
+
+SIGNATURE & IDENTITY (Bắt buộc ở Frame 4 hoặc góc Frame 1):
+Chữ ký viết tay: "Tiến"
+Khối thông tin: "Dương Quang Tiến • Trưởng nhóm kinh doanh Manulife • 0935 074 268"
+
+ALLOWED_TEXT WHITELIST:
+[Danh sách chính xác các chuỗi ký tự được phép hiển thị trên ảnh]
+
+NEGATIVE CONSTRAINTS & ANTI-NOISE:
+[No plastic CGI skin, no uncanny smiling models, no visual noise symbols (░, ═, ###), no gibberish.]
+```
+
+---
+
+## 3. Quy Tắc Chữ Hiển Thị Trên Ảnh (Copy is Part of the Design)
+1. **Tiếng Việt 100% có dấu thanh:** Giữ nguyên văn bản tiếng Việt chính xác trong ngoặc kép `""`. Không tự ý dịch sang tiếng Anh.
+2. **Súc tích, cô đọng:** Tiêu đề dưới 10 từ để người xem nắm bắt trong 1.5 giây.
+3. **Bộ soát lỗi dấu thanh:** Đảm bảo các nguyên âm ghép (`ươ`, `iê`, `oạ`, `uâ`, `ẵ`) hiển thị chuẩn xác.
+
+---
+
+## 4. Khối Nhận Diện Cố Vấn (Advisor Signature)
+- Nguồn sự thật: `config/identity.yaml`
+- Luôn tích hợp trang nhã vào vùng negative space ở Frame 4 (hoặc góc dưới Frame 1):
+  - Chữ ký viết tay: `"Tiến"`
+  - Họ và tên: `Dương Quang Tiến`
+  - Chức danh & Tổ chức: `Trưởng nhóm kinh doanh Manulife`
+  - Hotline chính thức: `0935 074 268`
+- **Nghiêm cấm vạch kẻ ngang chia cắt trang.**

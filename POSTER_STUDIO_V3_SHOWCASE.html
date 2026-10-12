@@ -629,6 +629,7 @@
       <ul class="nav-links">
         <li><a href="#modes">Chế Độ</a></li>
         <li><a href="#styles">Hệ Phong Cách</a></li>
+        <li><a href="#prompts-chat">Prompts.chat Hub</a></li>
         <li><a href="#dna">Visual DNA</a></li>
         <li><a href="#typography">Typography</a></li>
         <li><a href="#signature">Chữ Ký Cố Vấn</a></li>
@@ -641,7 +642,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero-eyebrow">
-        <span>✦</span> MASTER RELEASE V3.0 — DUAL-ENGINE POSTER PRODUCTION <span>✦</span>
+        <span>✦</span> MASTER RELEASE V3.1 — PROMPTS.CHAT INTEGRATION & COMMUNITY INTELLIGENCE <span>✦</span>
       </div>
       <h1>POSTER STUDIO & MASTER PROMPT SYSTEM</h1>
       <p class="hero-subtitle">
@@ -650,8 +651,12 @@
 
       <div class="hero-metrics">
         <div class="metric-card">
-          <div class="metric-num">10</div>
-          <div class="metric-label">Trụ Cột Art-Centric</div>
+          <div class="metric-num">2,435</div>
+          <div class="metric-label">Prompts.chat Offline Hub</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-num">13</div>
+          <div class="metric-label">Trụ Cột Nghệ Thuật</div>
         </div>
         <div class="metric-card">
           <div class="metric-num">8</div>
@@ -680,36 +685,38 @@
 
       <div class="modes-grid">
         <div class="mode-card active-mode">
-          <span class="mode-badge">Mặc Định (Recommended)</span>
+          <span class="mode-badge">Mặc Định (Default)</span>
+          <h3 class="mode-name">PROMPT_ONLY</h3>
+          <p class="mode-desc">Chốt nội dung, style, chọn PA xong hệ thống sẽ viết Bộ Prompt Thực Chiến đồng bộ cho 4 ảnh (Carousel 4 Frames) để người dùng tự test.</p>
+          <ul class="mode-features">
+            <li>Kịch bản 4 khung hình liền mạch (Hook → Contrast → Math → Resolution)</li>
+            <li>Khóa chặt danh sách ALLOWED_TEXT & tiếng Việt 100% có dấu</li>
+            <li>Bộ lọc Anti-AI clichés & Anti-Noise</li>
+            <li>Tuyệt đối KHÔNG tự ý tạo ảnh bằng AI</li>
+          </ul>
+        </div>
+
+        <div class="mode-card">
+          <span class="mode-badge">Chỉ Khi Yêu Cầu</span>
+          <h3 class="mode-name">DIRECT_IMAGE</h3>
+          <p class="mode-desc">Kích hoạt sinh ảnh thị giác chất lượng cao CHỈ KHI người dùng có yêu cầu rõ ràng ("tạo ảnh", "vẽ ảnh", "render ảnh").</p>
+          <ul class="mode-features">
+            <li>Tối ưu độ sắc nét typography tiếng Việt</li>
+            <li>Tự động ánh xạ tỷ lệ 4:5 sang 3:4 cho API</li>
+            <li>Render tích hợp chữ ký cố vấn vào negative space</li>
+            <li>Lưu file vào `jobs/` & trả link nhấp được</li>
+          </ul>
+        </div>
+
+        <div class="mode-card">
+          <span class="mode-badge">Dual Output</span>
           <h3 class="mode-name">HYBRID</h3>
-          <p class="mode-desc">Tạo ảnh hoàn thiện trực tiếp hiển thị ngay trong cuộc trò chuyện ĐỒNG THỜI xuất bản 1 Universal Master Prompt 18 khối.</p>
+          <p class="mode-desc">Tạo ảnh hoàn thiện trực tiếp hiển thị ngay trong cuộc trò chuyện ĐỒNG THỜI xuất bản 1 Universal Master Prompt 18 khối khi được yêu cầu cả hai.</p>
           <ul class="mode-features">
             <li>Tạo ảnh tức thì qua `generate_image`</li>
             <li>Xuất Master Prompt đa nền tảng</li>
             <li>Lưu file vào `jobs/<PROJECT>/`</li>
             <li>Trả link xem file trực tiếp (`file:///`)</li>
-          </ul>
-        </div>
-
-        <div class="mode-card">
-          <span class="mode-badge">Visual Focus</span>
-          <h3 class="mode-name">DIRECT_IMAGE</h3>
-          <p class="mode-desc">Tập trung 100% vào việc sinh ảnh thị giác chất lượng cao khi người dùng ra lệnh "tạo ảnh", "vẽ poster", "render ngay".</p>
-          <ul class="mode-features">
-            <li>Tối ưu độ sắc nét typography tiếng Việt</li>
-            <li>Tự động ánh xạ tỷ lệ 4:5 sang 3:4 cho API</li>
-            <li>Render tích hợp chữ ký cố vấn</li>
-          </ul>
-        </div>
-
-        <div class="mode-card">
-          <span class="mode-badge">Engine Export</span>
-          <h3 class="mode-name">PROMPT_ONLY</h3>
-          <p class="mode-desc">Chỉ xuất Master Production Prompt khi người dùng yêu cầu "chỉ prompt", "viết prompt cho Midjourney/FLUX".</p>
-          <ul class="mode-features">
-            <li>Đầy đủ 18 khối chuẩn công nghiệp</li>
-            <li>Khóa chặt danh sách ALLOWED_TEXT</li>
-            <li>Bộ lọc Anti-AI clichés nghiêm ngặt</li>
           </ul>
         </div>
       </div>
@@ -803,6 +810,90 @@
           <div class="style-code">ART_10</div>
           <h4 class="style-title">Byzantine Gold Mosaic</h4>
           <p class="style-sub">Tranh ghép đá cẩm thạch khảm vàng ròng Byzantine, cảm giác thành trì vĩnh cửu.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prompts.chat Community Intelligence Section -->
+  <section id="prompts-chat">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">COMMUNITY INTELLIGENCE HUB</span>
+        <h2 class="section-title">Kho Trí Tuệ prompts.chat & Bộ Công Cụ CLI</h2>
+        <p class="section-desc">Tích hợp trọn vẹn 2,435 prompt cộng đồng mã nguồn mở lớn nhất thế giới (173k+ Stars, CC0 1.0) trực tiếp vào Poster Studio V3.0.</p>
+      </div>
+
+      <!-- 4 Pillars of Prompts.chat Integration -->
+      <div class="modes-grid" style="margin-bottom: 36px;">
+        <div class="mode-card">
+          <span class="mode-badge">Python CLI Tool</span>
+          <h3 class="mode-name">prompts_chat_tool.py</h3>
+          <p class="mode-desc">Tra cứu, hiển thị và tự động chuyển đổi mọi prompt cộng đồng sang 18-Block Master Production Prompt.</p>
+          <ul class="mode-features">
+            <li><code>python scripts/prompts_chat_tool.py search "poster"</code></li>
+            <li><code>python scripts/prompts_chat_tool.py adapt &lt;act&gt;</code></li>
+            <li><code>python scripts/prompts_chat_tool.py stats</code></li>
+          </ul>
+        </div>
+
+        <div class="mode-card">
+          <span class="mode-badge">Cognitive Science</span>
+          <h3 class="mode-name">Visual Attention & Eye-Flow</h3>
+          <p class="mode-desc">Kế thừa từ prompt Predictive Eye Tracking Heatmap: Nielsen Norman Group & Gestalt.</p>
+          <ul class="mode-features">
+            <li>Ưu tiên sinh học (Biological Priority)</li>
+            <li>Mỏ neo tương phản cao (High-contrast anchor)</li>
+            <li>Quỹ đạo đọc tự nhiên Z-pattern & Circular Orbit</li>
+            <li>Vùng đệm âm bản 35–45% thanh sạch</li>
+          </ul>
+        </div>
+
+        <div class="mode-card">
+          <span class="mode-badge">High Conversion</span>
+          <h3 class="mode-name">10 Công Thức Tiêu Đề Đột Phá</h3>
+          <p class="mode-desc">Kế thừa từ Landing Page Copywriting: 10 công thức tiêu đề chuyển đổi cao chuẩn quốc tế.</p>
+          <ul class="mode-features">
+            <li>Outcome without pain / Turn input to outcome</li>
+            <li>Stop pain - Start pleasure / Audience callout</li>
+            <li>Differentiator hook / What-if provocation</li>
+            <li>Paradox & Contrast ("Chưa cần đâu...")</li>
+          </ul>
+        </div>
+
+        <div class="mode-card">
+          <span class="mode-badge">Token Cleanser</span>
+          <h3 class="mode-name">Anti-Visual-Noise Filter</h3>
+          <p class="mode-desc">Thanh lọc toàn bộ rác ký tự trang trí và token dư thừa khỏi Master Prompt và đồ họa.</p>
+          <ul class="mode-features">
+            <li>Khử ký tự rác (░, ═, │, ■, >>>, ###)</li>
+            <li>Triệt tiêu lặp dòng, lặp từ, duplicate blocks</li>
+            <li>Bảo toàn ngữ nghĩa tạo hình thuần khiết</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 New Master Visual Archetypes from Prompts.chat -->
+      <div style="background: rgba(0, 77, 44, 0.2); border: 1px solid var(--border-subtle); border-radius: 16px; padding: 32px 24px;">
+        <h3 style="font-family: var(--font-display); color: var(--gold-light); font-size: 20px; margin-bottom: 20px; text-align: center;">
+          ✦ 3 Phong Cách Nghệ Thuật Mới Tuyển Chọn Từ prompts.chat ✦
+        </h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 20px;">
+            <div style="font-family: var(--font-mono); color: var(--gold-primary); font-size: 11px; margin-bottom: 6px;">STYLE_024</div>
+            <h4 style="color: #fff; font-size: 16px; margin-bottom: 8px;">Art Deco Vintage Travel Poster</h4>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Họa hình du lịch hoài niệm 1930s Streamline Moderne, chuyển sắc airbrush mượt mà, đại cảnh bến cảng bình minh đón hưu trí thảnh thơi.</p>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 20px;">
+            <div style="font-family: var(--font-mono); color: var(--gold-primary); font-size: 11px; margin-bottom: 6px;">STYLE_025</div>
+            <h4 style="color: #fff; font-size: 16px; margin-bottom: 8px;">Exploded View Technical Infographic</h4>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Sa bàn 3D CAD bóc tách lơ lửng, đường chỉ dẫn leader-line mảnh, minh bạch từng tầng bảo vệ và tháp tài chính cá nhân.</p>
+          </div>
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 12px; padding: 20px;">
+            <div style="font-family: var(--font-mono); color: var(--gold-primary); font-size: 11px; margin-bottom: 6px;">STYLE_026</div>
+            <h4 style="color: #fff; font-size: 16px; margin-bottom: 8px;">Whimsical 3D Isometric Miniature</h4>
+            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Tiểu cảnh chibi 3D hộp mù (blind-box) đất nặn polymer mịn ấm cúng, đèn vàng hắt qua ô cửa nhỏ, che chở tổ ấm và học vấn con thơ.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -980,9 +1071,11 @@
             <li>`workflow.md` — Luồng 1-hướng-mạnh-nhất</li>
             <li>`direct_image_generation.md` — Tạo ảnh AI</li>
             <li>`dna_cloning_engine.md` — 6 tầng bóc tách</li>
+            <li>`visual_hierarchy_eyeflow.md` — Điểm rơi thị giác</li>
+            <li>`headline_copywriting_formulas.md` — 10 công thức tiêu đề</li>
             <li>`typography_system.md` — 11 công thức font</li>
             <li>`signature_system.md` — Khối cố vấn 4 tầng</li>
-            <li>`insurance_accuracy_compliance.md` — Tuân thủ</li>
+            <li>`qa_completeness_gate.md` — 8 điểm QA & khử nhiễu</li>
           </ul>
         </div>
 
@@ -993,31 +1086,31 @@
             <li>`STYLE_009_...` — Di sản hoàng gia</li>
             <li>`STYLE_017_...` — Comic Timeline</li>
             <li>`STYLE_018_...` — S-Curve di sản</li>
-            <li>`STYLE_019_...` — Đô thị 5 phút</li>
-            <li>`STYLE_020_...` — Thần Long Đông Sơn</li>
-            <li>`STYLE_021_...` — Bảo vật hoàng gia</li>
-            <li>`STYLE_022_...` — Gốm Chu Đậu</li>
             <li>`STYLE_023_...` — Modern Flat Vector</li>
+            <li>`STYLE_024_...` — Art Deco Travel</li>
+            <li>`STYLE_025_...` — Exploded CAD View</li>
+            <li>`STYLE_026_...` — Whimsical 3D Diorama</li>
           </ul>
         </div>
 
         <div class="arch-card">
-          <div class="arch-dir">📁 library/typography/</div>
+          <div class="arch-dir">📁 library/prompts_chat/ & scripts/</div>
+          <ul class="arch-list">
+            <li>`prompts_community.json` — 2,435 prompts</li>
+            <li>`prompts.csv` — Dữ liệu raw 6.8MB</li>
+            <li>`CURATED_CREATIVE_PROMPTS.md` — Tuyển tập</li>
+            <li>`scripts/prompts_chat_tool.py` — CLI Engine</li>
+          </ul>
+        </div>
+
+        <div class="arch-card">
+          <div class="arch-dir">📁 jobs/ & typography/</div>
           <ul class="arch-list">
             <li>`MASTER_FONT_CATALOG.md` — 30+ font chữ</li>
-            <li>Bảng đối soát từ khóa AI Prompt</li>
-            <li>11 công thức phối font chuẩn quốc tế</li>
-          </ul>
-        </div>
-
-        <div class="arch-card">
-          <div class="arch-dir">📁 jobs/</div>
-          <ul class="arch-list">
             <li>`song_khoe_moi_ngay_2024/` — 4 thẻ y tế</li>
             <li>`LA_CHAN_XANH/` — Bệnh hiểm nghèo</li>
             <li>`BAT_THU_MON_...` — Lạm phát & bảo toàn</li>
-            <li>`AO_TUONG_BHYT_...` — Viện phí & chi phí chìm</li>
-            <li>`XANH_PHU_QUY/` — Private Wealth VIP</li>
+            <li>`AO_TUONG_BHYT_...` — Chi phí chìm viện phí</li>
           </ul>
         </div>
       </div>

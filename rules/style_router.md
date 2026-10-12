@@ -42,7 +42,13 @@ Style must serve the message. Tuyệt đối không chọn phong cách chỉ vì
 - `CORPORATE_MINIMALIST_IDENTITY`: Nhận diện thương hiệu phẳng sạch sẽ, chuẩn mực Apple Keynote / Swiss Clean.
 - `AUTHENTIC_HUMAN_PHOTOJOURNALISM`: Phóng sự đời thực tập trung vào đôi bàn tay lao động gân guốc của nghệ nhân, **tuyệt đối không chụp mặt người cười giả tạo**.
 
-### 4. CÁC PHONG CÁCH ĐÃ LƯỢC BỎ (ARCHIVED)
+### 4. BỘ PHONG CÁCH CỘNG ĐỒNG TINH HOA TỪ PROMPTS.CHAT (COMMUNITY ELITE ARCHETYPES)
+*(Tích hợp từ cộng đồng [prompts.chat](https://prompts.chat/) & bộ công cụ [`scripts/prompts_chat_tool.py`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/scripts/prompts_chat_tool.py))*
+- 🌟 [`STYLE_024_ART_DECO_VINTAGE_TRAVEL_POSTER`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_024_ART_DECO_VINTAGE_TRAVEL_POSTER.md): Poster du lịch hoài niệm thập niên 1930, hình học Streamline Moderne, chuyển sắc airbrush mượt mà, đại cảnh bến đỗ bình yên cho hưu trí an nhàn.
+- 🌟 [`STYLE_025_EXPLODED_VIEW_TECHNICAL_INFOGRAPHIC`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_025_EXPLODED_VIEW_TECHNICAL_INFOGRAPHIC.md): Sa bàn cắt lớp 3D CAD bóc tách lơ lửng, đường chỉ dẫn leader-line mảnh, minh bạch từng tầng bảo vệ và tháp tài sản.
+- 🌟 [`STYLE_026_WHIMSICAL_3D_ISOMETRIC_MINIATURE_DIORAMA`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/styles/STYLE_026_WHIMSICAL_3D_ISOMETRIC_MINIATURE_DIORAMA.md): Tiểu cảnh chibi 3D hộp mù (blind-box toy) đất nặn polymer mịn ấm cúng, đèn vàng hắt ra từ ngôi nhà nhỏ, bảo vệ mái ấm và quỹ học vấn con thơ.
+
+### 5. CÁC PHONG CÁCH ĐÃ LƯỢC BỎ (ARCHIVED)
 *(Đã di chuyển vào thư mục [`library/archive/`](file:///D:/AI/POSTER_PROMPT_SYSTEM_V2/library/archive/))*
 - ❌ `CINEMATIC_SCULPTURAL_METAPHOR` (Đá Carrara & khối ngọc lục bảo 3D lạnh lùng)
 - ❌ `HIGH-END_EDITORIAL_QUIET_LUXURY` (Tạp chí cẩm thạch đen, sổ da dập vàng phô trương)

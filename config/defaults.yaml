@@ -2,17 +2,18 @@ project: POSTER_STUDIO_AND_PROMPT_SYSTEM
 version: '3.0'
 
 # Execution modes:
-# hybrid       = Directly generate high-end image visual AND output production Master Prompt (RECOMMENDED)
-# direct_image = Generate image visual directly using AI image engine
-# prompt_only  = Output universal 18-block Master Production Prompt only
-execution_mode: hybrid
+# prompt_only  = Output universal 18-block Master Production Prompt only (DEFAULT - User tests prompt first)
+# direct_image = Generate image visual directly using AI image engine (ONLY when user explicitly requests)
+# hybrid       = Directly generate high-end image visual AND output production Master Prompt
+execution_mode: prompt_only
 
 conversation_language: vi
 master_prompt_language: en
 artwork_copy_language: preserve_user_language
 
 workflow:
-  default_output: hybrid_image_and_master_prompt
+  default_output: four_frame_prompt_suite
+  default_frame_count: 4
   default_concept_count: 1
   approval_gate: false
   show_internal_reasoning: false

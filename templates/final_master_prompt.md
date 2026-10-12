@@ -1,106 +1,145 @@
-# FINAL MASTER PROMPT TEMPLATE
+# BẢN MẪU BỘ PROMPT 4 ẢNH THỰC CHIẾN (4-FRAME PRODUCTION SUITE TEMPLATE)
 
-Use this as the **single production output**. Do not split into mini-prompts.
+Sử dụng cấu trúc này để xuất bộ prompt 4 ảnh sau khi người dùng chốt kịch bản và phong cách thiết kế.
 
+---
+
+```markdown
+# BỘ PROMPT THỰC CHIẾN: [TÊN DỰ ÁN / CHỦ ĐỀ] (CAROUSEL 4 FRAMES)
+- **Dự án:** [Tên chiến dịch / Đề bài]
+- **Phong cách đã chọn:** [Tên phong cách, ví dụ: STYLE_017_EDITORIAL_COMIC_TIMELINE / STYLE_023_MODERN_FLAT_VECTOR]
+- **Tỷ lệ khung hình:** 1:1 (hoặc 4:5)
+- **Cố vấn tài chính:** Dương Quang Tiến • Trưởng nhóm kinh doanh Manulife • 0935 074 268 • Chữ ký: "Tiến"
+
+---
+
+## 1. THÔNG SỐ VISUAL DNA ĐỒNG BỘ CHO CẢ 4 FRAMES
+- **Phong cách nghệ thuật:** [Mô tả phong cách cốt lõi, nét vẽ, trường phái nghệ thuật]
+- **Chất liệu nền & Shaders:** [Giấy Dó sần ngà #F4EFEA / Vải lụa thêu chỉ vàng / Men rạn Kintsugi...]
+- **Bảng màu chấm phá:** [Xanh ngọc lục bảo Manulife #004D2C, Vàng kim #D4AF37, Trắng ngà #FBF9F4...]
+- **Ngôn ngữ chữ:** Chữ tiếng Việt chuẩn 100% đầy đủ dấu thanh, font phân cấp rõ ràng.
+
+---
+
+## 2. BỘ PROMPT CHI TIẾT CHO 4 FRAMES
+
+### 🖼️ FRAME 01: THE HOOK & MENTAL MODEL (Dừng lướt & Thức tỉnh)
 ```text
-ROLE & OBJECTIVE
-Create a [asset type] for [platform/use]. The purpose is [objective]. The poster must communicate one clear idea immediately and remain readable on mobile.
+ROLE & OBJECTIVE:
+Create a [style] commercial visual for [topic]. The goal is to immediately stop-scroll viewers by capturing [pain point / surprising insight].
 
-CORE MESSAGE
-The single message the viewer should understand is:
-"[core message]"
+VISUAL THESIS & HERO METAPHOR:
+[Describe central subject, action, emotional expression, environment, and physical details. Zero AI plastic skin.]
 
-VISUAL THESIS
-Before reading the supporting text, the viewer should visually understand that [visual meaning].
+STYLE & MATERIALITY:
+[Consistent style line-art, textures, lighting physics, visible authentic paper/ceramic grain.]
 
-HERO VISUAL
-[Describe the one dominant visual anchor in concrete terms.]
+COMPOSITION & ASPECT RATIO:
+Aspect ratio 1:1. Upper 35% clean negative space for Vietnamese headline. Central illustration occupies 65%.
 
-SUBJECT + ACTION + RELATIONSHIPS
-[Who/what appears, what each subject is doing, and exactly how important objects/people connect or interact. Lock continuity and ownership/connection where needed.]
-
-ENVIRONMENT / SCENE
-[Describe only the environment details that support the message.]
-
-VISUAL METAPHOR
-[Explain the metaphor and what each key element represents. Omit this block if the design is intentionally non-metaphorical.]
-
-COMPOSITION & HIERARCHY
-[Aspect-ratio-aware layout. State hero position/scale, text zones, negative space, eye path, depth, and what must remain visually dominant.]
-
-STYLE / VISUAL DNA
-[One chosen style family, rendering approach, typography mood, shapes/line quality, realism level, and anti-copy intent if a reference is used.]
-
-PALETTE / LIGHTING / MATERIAL
-[Specify only what materially affects the result: dominant colors, accent logic, lighting direction/contrast, textures/materials.]
-
-ON-IMAGE COPY
-Render the following Vietnamese text exactly as written.
-
+ON-IMAGE COPY (EXACT VIETNAMESE):
 Headline:
-"[exact headline]"
+"[CÂU TIÊU ĐỀ BẮT MẮT]"
+Subhead:
+"[Dòng dẫn nhập thức tỉnh]"
 
-Subheadline:
-"[exact subheadline if used]"
+ALLOWED_TEXT WHITELIST:
+["[CÂU TIÊU ĐỀ BẮT MẮT]", "[Dòng dẫn nhập thức tỉnh]"]
 
-Supporting copy:
-"[exact supporting line 1]"
-"[exact supporting line 2]"
-[Add only necessary lines.]
+NEGATIVE CONSTRAINTS & ANTI-NOISE:
+No plastic CGI models, no uncanny expressions, no symbolic clutter (░, ═, ###), no gibberish text.
+```
 
-CTA / labels:
-"[exact text only if needed]"
+---
 
-Professional identity block:
-"[exact full name if active]"
-"[exact title if active]"
-"[exact organization if active]"
-"[confirmed phone only if contact mode is active]"
+### 🖼️ FRAME 02: THE CONTRAST & BLINDSPOT (Điểm mù & Nghịch lý)
+```text
+ROLE & OBJECTIVE:
+Create a [style] illustration contrasting [reality vs expectation], revealing the hidden financial blindspot.
 
-Handwritten signature:
-"Tiến"
+VISUAL THESIS & HERO METAPHOR:
+[Describe visual contrast, two opposing forces/elements, witty or serious symbolic metaphor.]
 
-TEXT HIERARCHY
-- [Define headline as primary or define hero vs headline dominance.]
-- [Define subheadline/support sizes relative to headline.]
-- Professional identity block is small and secondary.
-- Handwritten "Tiến" is subtle and does not compete with the message.
+STYLE & MATERIALITY:
+[Consistent aesthetic with Frame 1, same texture, lighting, and palette accents.]
 
-TEXT PLACEMENT
-[Specify safe text zones and relationship to hero. Preserve negative space. Do not place important text over busy/high-contrast visual areas.]
+COMPOSITION & ASPECT RATIO:
+Aspect ratio 1:1. Upper 35% reserved for Vietnamese headline. Middle-lower 65% for the contrasting scene.
 
-SIGNATURE SYSTEM
-Use [minimal / personal_brand / contact] mode.
-Integrate the handwritten "Tiến" naturally into safe negative space. It must be legible, understated, and composition-aware—not a large watermark.
-[Describe identity-block placement if active.]
+ON-IMAGE COPY (EXACT VIETNAMESE):
+Headline:
+"[TIÊU ĐỀ ĐIỂM MÙ / NGHỊCH LÝ]"
+Subhead:
+"[Dòng đối chiếu thực tế]"
 
-ALLOWED_TEXT — RENDER EXACTLY AND ONLY THESE STRINGS
-- "[headline]"
-- "[subheadline if used]"
-- "[support line 1]"
-- "[support line 2]"
-- "[CTA/labels if used]"
-- "[full name if active]"
-- "[title if active]"
-- "[organization if active]"
-- "[confirmed phone if active]"
-- "Tiến"
+ALLOWED_TEXT WHITELIST:
+["[TIÊU ĐỀ ĐIỂM MÙ / NGHỊCH LÝ]", "[Dòng đối chiếu thực tế]"]
 
-Render exactly and only the ALLOWED_TEXT strings. Do not add any other letters, numbers, pseudo-text, labels, captions, UI text, instruction text, placeholder text, watermark, fake website, fake phone number, or unauthorized logo.
+NEGATIVE CONSTRAINTS & ANTI-NOISE:
+No plastic skin, no distorted proportions, no floating fake letters.
+```
 
-NEGATIVE CONSTRAINTS
-- [Concept-specific failure to avoid]
-- [Composition-specific failure to avoid]
-- No generic AI-finance clichés unless the concept explicitly requires them.
-- No clutter competing with the focal point.
-- No unauthorized brand logo.
-- No extra rendered text.
+---
 
-TECHNICAL
-Aspect ratio: [ratio].
-Output intent: [platform].
-Prioritize clear mobile readability, clean edges, coherent anatomy/object relationships, strong focal hierarchy, and production-quality finish.
+### 🖼️ FRAME 03: THE ARCHITECTURE & MATH (Cơ chế bảo vệ & Giải pháp)
+```text
+ROLE & OBJECTIVE:
+Create a [style] conceptual visual demonstrating the transparent protection structure or financial formula.
 
-ACCURACY LOCK
-Do not invent insurance benefits, financial values, rates, conditions, medical claims, legal claims, product features, contact data, or credentials. Render only facts and copy supplied or verified in the brief/source of truth. Preserve the exact Vietnamese copy above.
+VISUAL THESIS & HERO METAPHOR:
+[Describe layered protective structure, 3-tier shield, financial ratio visualization, transparent mechanism.]
+
+STYLE & MATERIALITY:
+[Consistent texture and aesthetic discipline. Clean diagrammatic or artistic clarity.]
+
+COMPOSITION & ASPECT RATIO:
+Aspect ratio 1:1. Clear hierarchy between upper headline, central visual diagram, and metric callouts.
+
+ON-IMAGE COPY (EXACT VIETNAMESE):
+Headline:
+"[TIÊU ĐỀ CƠ CHẾ / GIẢI PHÁP]"
+Subhead:
+"[Công thức số liệu / Thông điệp tháp bảo vệ]"
+
+ALLOWED_TEXT WHITELIST:
+["[TIÊU ĐỀ CƠ CHẾ / GIẢI PHÁP]", "[Công thức số liệu / Thông điệp tháp bảo vệ]"]
+
+NEGATIVE CONSTRAINTS & ANTI-NOISE:
+No messy overlapping text, no AI artifacts.
+```
+
+---
+
+### 🖼️ FRAME 04: THE RESOLUTION & ADVISOR STACK (Hành động & Khối Cố Vấn)
+```text
+ROLE & OBJECTIVE:
+Create a [style] concluding artwork delivering lasting peace of mind and guiding the viewer to decisive action.
+
+VISUAL THESIS & HERO METAPHOR:
+[Serene, sturdy visual conclusion: safe harbor, flourishing home, golden seal of protection.]
+
+STYLE & MATERIALITY:
+[Consistent premium materiality, warm reassuring lighting.]
+
+COMPOSITION & ASPECT RATIO:
+Aspect ratio 1:1. Upper 30% for final takeaway headline. Center 45% for visual anchor. Bottom 25% negative space elegantly hosting the 4-tier advisor signature stack.
+
+ON-IMAGE COPY (EXACT VIETNAMESE):
+Headline:
+"[TIÊU ĐỀ KẾT LUẬN / KÊU GỌI HÀNH ĐỘNG]"
+Subhead:
+"[Lời nhắn nhủ an tâm bảo vệ]"
+
+SIGNATURE & IDENTITY SYSTEM:
+Line 1: Handwritten signature "Tiến" in brand color
+Line 2: "Dương Quang Tiến"
+Line 3: "Trưởng nhóm kinh doanh Manulife"
+Line 4: "0935 074 268"
+
+ALLOWED_TEXT WHITELIST:
+["[TIÊU ĐỀ KẾT LUẬN]", "[Lời nhắn nhủ an tâm]", "Tiến", "Dương Quang Tiến", "Trưởng nhóm kinh doanh Manulife", "0935 074 268"]
+
+NEGATIVE CONSTRAINTS & ANTI-NOISE:
+No horizontal dividing bars cutting the signature, no plastic CGI face, no stray symbols.
+```
 ```

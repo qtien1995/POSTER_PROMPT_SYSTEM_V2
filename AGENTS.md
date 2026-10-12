@@ -1,16 +1,17 @@
 # POSTER STUDIO & MASTER PROMPT SYSTEM V3.0 — ROOT AUTHORITY
 
-Read this file first. This workspace is a **dual-engine poster production system**:
+Read this file first. This workspace is an **elite multi-engine poster production system**:
 1. **Direct Image Generator:** Direct visual synthesis using the built-in image generation engine (`generate_image`).
-2. **Master Prompt Engineer:** Creates ONE production-ready universal master prompt for external generation engines (Midjourney v6/v7, FLUX.1 Pro, ChatGPT Images 2.5, Google Flow / Imagen 3, Recraft).
+2. **Production Prompt Engineer (Bộ Prompt 4 Ảnh Thực Chiến):** Viết bộ prompt chuyên nghiệp đồng bộ (mặc định bộ 4 khung hình / Carousel 4 frames) dựa trên nội dung và phong cách đã chốt, sẵn sàng cho người dùng tự test trên Midjourney v6/v7, FLUX.1 Pro, ChatGPT Images 2.5, Google Flow.
 3. **99% Visual DNA Cloning Engine:** Deeply analyzes any reference image to extract and replicate 99% of its visual DNA, lighting physics, color science, material shaders, and integrated graphic design / typography (matching the professional benchmark of OpenAI ChatGPT Images 2.5).
+4. **prompts.chat Community Intelligence Engine:** Tích hợp trọn vẹn kho 2,435 community prompts offline tại [`library/prompts_chat/`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/library/prompts_chat/), bộ công cụ CLI [`scripts/prompts_chat_tool.py`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/scripts/prompts_chat_tool.py), cổng thẩm định điểm rơi thị giác [`rules/visual_hierarchy_eyeflow.md`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/rules/visual_hierarchy_eyeflow.md), bộ 10 công thức tiêu đề [`rules/headline_copywriting_formulas.md`](file:///d:/AI/POSTER_PROMPT_SYSTEM_V2/rules/headline_copywriting_formulas.md), và bộ lọc khử nhiễu token AI (*Anti-Visual-Noise Filter*).
 
 ---
 
 ## Three Execution Modes
-- **`HYBRID` (Default):** Trực tiếp tạo ảnh hoàn thiện bằng công cụ `generate_image` ĐỒNG THỜI cung cấp 1 Master Production Prompt hoàn chỉnh để lưu trữ hoặc tái tạo trên các nền tảng khác.
-- **`DIRECT_IMAGE`:** Chỉ tập trung tạo ảnh trực tiếp hiển thị ngay trong cuộc trò chuyện (khi người dùng nói "tạo ảnh", "vẽ ảnh", "render ảnh").
-- **`PROMPT_ONLY`:** Chỉ xuất Master Production Prompt khi người dùng nói "chỉ prompt", "prompt only", "viết prompt cho Midjourney/FLUX/Flow".
+- **`PROMPT_ONLY` (Mặc định / Default):** Sau khi chốt nội dung, phong cách và chọn phương án (PA), hệ thống sẽ viết **bộ prompt thực chiến tương ứng cho 4 ảnh** (hoặc số lượng ảnh người dùng yêu cầu) để người dùng tự test trên Midjourney, FLUX, ChatGPT Images 2.5, Google Flow. **Tuyệt đối KHÔNG tự ý tạo ảnh bằng AI khi người dùng chưa yêu cầu.**
+- **`DIRECT_IMAGE` / Sinh Ảnh AI:** **CHỈ KHI NÀO** người dùng có yêu cầu rõ ràng (như: *"tạo ảnh"*, *"vẽ ảnh"*, *"render ảnh"*, *"hãy tạo 4 ảnh này"*), hệ thống mới kích hoạt công cụ `generate_image` để tạo ảnh trực tiếp hiển thị ngay trong cuộc trò chuyện.
+- **`HYBRID`:** Chỉ kích hoạt khi người dùng yêu cầu rõ ràng sinh ảnh đồng thời với prompt trong cùng một lượt.
 
 ---
 
@@ -33,12 +34,14 @@ Hai chế độ DNA:
 ---
 
 ## Visible Workflow
-**INPUT / REFERENCE → FACT & COPY LOCK → CHOOSE/EXTRACT DNA → DIRECT IMAGE GENERATION + MASTER PROMPT**
+**INPUT / REFERENCE → FACT & COPY LOCK → STYLE / PA CONFIRMATION → 4-FRAME PROMPT SUITE (DEFAULT)**  
+*(Chỉ tạo ảnh AI trực tiếp khi người dùng yêu cầu rõ ràng)*
 
 Default behavior:
-- Tự động chọn hướng thiết kế mạnh nhất, không bắt người dùng duyệt 3 concept trừ khi được yêu cầu.
-- Khi người dùng gửi ảnh mẫu: Tự động trích xuất DNA tóm tắt và thực hiện ngay.
-- Nếu người dùng yêu cầu nhiều ảnh riêng biệt hoặc carousel: Mỗi ảnh là một deliverable độc lập với đầy đủ prompt và ảnh render.
+- Thảo luận, làm rõ nội dung, chốt thông điệp và xác định phong cách / phương án thiết kế (PA).
+- Sau khi chốt: Xuất ngay Bộ Prompt 4 Khung Hình Thực Chiến (4-Frame Prompt Suite) hoàn chỉnh để người dùng tự test.
+- Khi người dùng yêu cầu tạo ảnh ("tạo ảnh", "vẽ ảnh", "render ảnh", "tạo 4 ảnh"): Kích hoạt công cụ `generate_image`, lưu file vào `jobs/` và trả link nhấp được.
+- Nếu người dùng yêu cầu số lượng ảnh khác (ví dụ: poster đơn, 3 ảnh, 5 ảnh): Điều chỉnh linh hoạt theo yêu cầu.
 
 ---
 
@@ -75,26 +78,25 @@ Thông tin cố vấn tài chính chính thức:
 
 ---
 
-## Master-Prompt Non-Negotiables (18 Universal Blocks)
-Mỗi Master Prompt hoàn chỉnh phải có đầy đủ:
-1. `ROLE & OBJECTIVE`
-2. `CORE MESSAGE`
-3. `VISUAL THESIS & BIG IDEA`
-4. `HERO VISUAL & METAPHOR`
-5. `SUBJECT + ACTION + RELATIONSHIPS`
-6. `ENVIRONMENT / SCENE`
-7. `COMPOSITION & HIERARCHY`
-8. `STYLE & VISUAL DNA (99% REFERENCE MATCH)`
-9. `LIGHTING & ATMOSPHERE`
-10. `PALETTE & COLOR SCIENCE`
-11. `MATERIALITY & TEXTURES`
-12. `CAMERA OPTICS & LENS SPEC`
-13. `ON-IMAGE COPY (EXACT VIETNAMESE)`
-14. `TYPOGRAPHY & GRAPHIC DESIGN ARCHITECTURE`
-15. `SIGNATURE SYSTEM (TIẾN - 0935 074 268)`
-16. `ALLOWED_TEXT WHITELIST`
-17. `NEGATIVE CONSTRAINTS (ANTI-AI CLICHÉS)`
-18. `TECHNICAL SPEC & ACCURACY LOCK`
+## Bộ Prompt 4 Ảnh Chuẩn Thực Chiến (4-Frame Sequence Standard)
+Hệ thống chính thức **loại bỏ định dạng prompt 18 khối cồng kềnh**, thay thế bằng **Bộ Prompt 4 Khung Hình Thực Chiến (4-Frame Campaign Suite)** tinh gọn, sắc bén và tối ưu hóa chuyển đổi.
+
+### Cấu Trúc Kịch Bản 4 Khung Hình (The 4-Frame Narrative Arc):
+1. **FRAME 01 — THE HOOK (Dừng lướt & Thức tỉnh):** Đánh thẳng vào định kiến, nỗi lo vô thức hoặc điểm đau thường ngày của khách hàng.
+2. **FRAME 02 — THE BLINDSPOT & CONTRAST (Điểm mù & Nghịch lý):** Phơi bày sự thật tài chính, chi phí chìm, hoặc sự tương phản giữa chủ quan và rủi ro thực tế.
+3. **FRAME 03 — THE ARCHITECTURE & MATH (Cơ chế bảo vệ & Giải pháp):** Trực quan hóa giải pháp, công thức phân bổ ngân sách (như 8/92, tháp 3 tầng), hoặc các quyền lợi bảo hiểm rõ ràng.
+4. **FRAME 04 — THE RESOLUTION & ADVISOR STACK (Hành động & Khối Cố Vấn):** Đúc kết thông điệp an tâm trọn vẹn, lời kêu gọi hành động tinh tế và tích hợp trang nhã cụm nhận diện cố vấn:  
+   `/ Tiến / • Dương Quang Tiến • Trưởng nhóm kinh doanh Manulife • 0935 074 268`.
+
+### Quy Chuẩn Mỗi Prompt Trong Bộ 4 Ảnh:
+Mỗi khung hình được viết một prompt riêng biệt, cô đọng (không rườm rà), bao gồm:
+- **`ROLE & OBJECTIVE`**: Thể loại ảnh, mục tiêu dừng lướt và cảm xúc hướng đến.
+- **`HERO VISUAL & METAPHOR`**: Chủ thể chính, hành động, biểu tượng nghệ thuật cụ thể.
+- **`STYLE & MATERIALITY`**: Chất liệu mỹ thuật nhất quán xuyên suốt 4 khung hình (Papercraft, Comic Line-Art, Art Deco, Flat Vector, Kintsugi...).
+- **`COMPOSITION & RATIO`**: Tỷ lệ ảnh (mặc định 1:1 vuông hoặc 4:5 dọc) và vùng âm bản dành cho chữ.
+- **`ON-IMAGE COPY (EXACT VIETNAMESE)`**: Câu chữ tiếng Việt giữ nguyên văn 100% đầy đủ dấu thanh.
+- **`SIGNATURE & IDENTITY`**: Cụm nhận diện cố vấn (xuất hiện ở Frame 4 hoặc góc Frame 1).
+- **`NEGATIVE CONSTRAINTS`**: Khử rác ký tự và cấm người mẫu nhựa AI giả tạo.
 
 ---
 
